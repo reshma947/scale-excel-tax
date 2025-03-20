@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEC Registration</title>
+    <link rel="stylesheet" href="./css/iec.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <!-- <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" /> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./static/css/mdb.min.css"/>
+
+    <style>
+       
+        .mega-menu-left-list-items p,
+        .mega-menu-right-list-items a {
+            border: none;
+        }
+
+        .mega-menu {
+            background-color: #f7f7f7;
+            max-height: 500px;
+            overflow: scroll;
+            /* overflow-x: hidden; */
+        }
+
+        .mega-menu-left-list-items p:hover {
+            background-color: #ffff;
+            color: #119083;
+            cursor: pointer;
+        }
+
+        .mega-menu-right-list-items a:nth-child(1),.bold {
+            font-size: 18px;
+            font-weight: bold;
+            width: max-content;
+            /* border-bottom: solid 1px #007bff; */
+            /* padding-left: 0px; */
+        }
+
+        .mega-menu-right-list-items a:hover {
+            color: #119083;
+            background-color: #f7f7f7;
+        }
+
+        .mega-menu {
+            width: 52%;
+        }
+
+        @media (max-width: 992px) {
+            .mega-menu {
+                width: 100%;
+            }
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 2px;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <a class="me-auto" href="./index.html">
+                <img src="http://127.0.0.1:5500/css/images/new%20logo.png" alt="Scalexcel Logo" style="width: 200px;" />
+            </a>
+            <button data-mdb-button-init class="float-end navbar-toggler px-0" type="button" data-mdb-collapse-init
+                data-mdb-target="#navbarExample2" aria-controls="navbarExample2" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarExample2">
+                <!-- Left links -->
+                <ul class="navbar-nav ms-auto ps-lg-0" style="padding-left: 0.15rem">
+                    <!-- Navbar dropdown -->
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Business Setup
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-business-setup"
+                            aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="companyRegistration" onclick="displayMenuItem(event)"
+                                                onmouseover="getListItems(event);"><i class="far fa-building"></i>
+                                                Company Registration <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="internationalBusinessSetup" onmouseover="getListItems(event);">
+                                                <i class="far fa-building"></i>
+                                                International Business Setup <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="licences&Registration" onmouseover="getListItems(event);">
+                                                <i class="far fa-building"></i>
+                                                Licenses & Registrations <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3" id="webDevelopment"
+                                                onmouseover="getListItems(event);"><i class="far fa-building"></i>
+                                                Web Development <i class="float-end pt-1 fas fa-angle-right"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="bussinessSetuplistItems">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Tax & Compliance
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-tax-compliance"
+                            aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="gstandOtherIndirectTax" onclick="displayMenuItemTax(event)"
+                                                onmouseover="getListItemsTax(event);"><i class="far fa-building"></i>
+                                                GST and Other Indirect Tax <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="changesinPvtLtdCompany" onmouseover="getListItemsTax(event);">
+                                                <i class="far fa-building"></i>
+                                                Changes in Pvt Ltd Company <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="changesinLimitedLiabilityPartnership"
+                                                onmouseover="getListItemsTax(event);"><i class="far fa-building"></i>
+                                                Changes In Limited Liability Partnership <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="mandatoryAnnualFilings" onmouseover="getListItemsTax(event);">
+                                                <i class="far fa-building"></i>
+                                                Mandatory Annual Filings <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3" id="labourCompliance"
+                                                onmouseover="getListItemsTax(event);"><i class="far fa-building"></i>
+                                                Labour Compliance <i class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3" id="accounting&Tax"
+                                                onmouseover="getListItemsTax(event);"><i class="far fa-building"></i>
+                                                Accounting & Tax <i class="float-end pt-1 fas fa-angle-right"></i></p>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="tax&ComplianceListItems">
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Trademark & IP
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-trademark-ip"
+                            aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="tradeMark" onclick="displayMenuItemTrademark(event)"
+                                                onmouseover="getListItemsTrademark(event);"><i
+                                                    class="far fa-building"></i>
+                                                Trademark <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3" id="copyRight"
+                                                onmouseover="getListItemsTrademark(event);"><i class="far fa-building"></i>
+                                                Copyright <i class="float-end pt-1 fas fa-angle-right"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="trademark&IpListItems">
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Others
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-others" aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="ngo" onclick="displayMenuItemOthers(event)"
+                                                onmouseover="getListItemsOthers(event);"><i class="far fa-building"></i>
+                                                NGO <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="fullyFledgeMoneyChangesLicence" onmouseover="getListItemsOthers(event);">
+                                                <i class="far fa-building"></i>
+                                                Fully Fledge Money Changes Licence <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="ca/Cs" onclick="displayMenuItemOthers(event)"
+                                                onmouseover="getListItemsOthers(event);"><i class="far fa-building"></i>
+                                                CA/CS <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                            id="rera" onclick="displayMenuItemOthers(event)"
+                                            onmouseover="getListItemsOthers(event);"><i class="far fa-building"></i>
+                                            RERA <i class="float-end pt-1 fas fa-angle-right"></i>
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="othersListItems">
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-resources" aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="taxation" onclick="displayMenuItemResources(event)"
+                                                onmouseover="getListItemsResources(event);"><i class="far fa-building"></i>
+                                                Taxation <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="accounting" onclick="displayMenuItemResources(event)"
+                                                onmouseover="getListItemsResources(event);">
+                                                <i class="far fa-building"></i>
+                                                Accounting <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="businessConsulting" onclick="displayMenuItemResources(event)"
+                                                onmouseover="getListItemsResources(event);"><i class="far fa-building"></i>
+                                                Business Consulting <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="resourcesListItems">
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <a class="nav-link fw-bold" href="./blog.html" id="navbarDropdown"
+                    role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                    Blog
+                    </a>
+
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-bars" aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="patnerWithUs" onclick="displayMenuItemBars(event)"
+                                                onmouseover="getListItemsBars(event);"><i class="far fa-building"></i>
+                                                Patner With Us <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="talktoaExpert" onclick="displayMenuItemBars(event)"
+                                                onmouseover="getListItemsBars(event);">
+                                                <i class="far fa-building"></i>
+                                                Talk to a Expert <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                          
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="barsListItems">
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-7">
+                <h1 class="mb-4 fw-bold">Importer Exporter Code (IEC) Registration</h1>
+                <div class="d-lg-flex pt-2 mb-3">
+                    <i class="fa fa-circle-check text-green pt-2 pe-2"></i>
+                    <p class="fs-5">Guaranteed submission of IEC application within two days in the DGFT office T&C* </p>
+                </div>
+                <div class="d-lg-flex pt-2">
+                    <i class="fa fa-circle-check text-green pt-2 pe-2"></i>
+                    <p class="fs-5">Make your business global. Apply from anywhere in India with IEC code</p>
+                </div>
+                <div>
+                    <img src="https://assets.vakilsearch.com/live-images/video-play/watch_now-yellowblack.png" height="50" width="150">
+                </div>
+            </div>
+
+            <div class="ms-5 col-4 shadow-lg rounded-2 position-relative bg-warning-subtle">
+                <div class="position-absolute top-0 start-0 translate-start">
+                    <img src="./css/images/img.png" height="45" width="200">
+                </div>
+                <form>
+                <h3 class="text-center mt-5 pt-2">Get Started</h3>
+                    <div class="mb-1">
+                      <label class="form-label fw-semibold ps-1">Email</label>
+                      <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                    </div>
+
+                    <div class="mb-1">
+                        <label for="mobile" class="col-form-label fw-semibold ps-1">Mobile No</label>
+                        <input type="text" class="form-control" id="mobile" placeholder="Mobile No" required>
+                      </div>
+
+                      <div class="mb-1">
+                        <label for="city" class="col-form-label fw-semibold ps-1">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="City">
+                      </div>
+                <div class="d-lg-flex justify-content-center mt-4 mb-3">
+                    <button type="submit" class="px-5 py-2 text-white back-green border-0 rounded-3 fw-bold fs-6">Talk to our expert</button>
+                </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1 class="fw-bold text-center mb-4 mt-5">IEC Code <span class="text-green"> Registration With SCALEXCEL</span></h1>
+        <p class="fs-5">IEC registration online has never been this easier. Get in touch with our experts from Vakilsearch to complete the whole process in three steps.</p>
+
+        <div class="row row-cols-lg-3 mt-5">
+            <div class="text-center">
+                <img src="https://assets.vakilsearch.com/Ngo/summary-icon-1.svg" height="62" width="62">
+                <h5 class="mt-4 fw-bold">Talk to our experts</h5>
+            </div>
+            <div class="text-center">
+                <img src="https://assets.vakilsearch.com/Ngo/summary-icon-3.svg" height="62" width="62">
+                <h5 class="mt-4 fw-bold pb-2">Provide the required documents</h5>
+            </div>
+            <div class="text-center">
+                <img src="https://assets.vakilsearch.com/Ngo/summary-icon-4.svg" height="62" width="62">
+                <h5 class="mt-4 fw-bold pb-2">Complete IEC registration</h5>
+            </div>
+        </div>
+
+
+
+        <div class="row mt-5 mb-5">
+            <div class="col-lg-8">
+                <h1 class="fw-bold pb-3">Import Export Code (IEC) Registration - <span class="text-green">An Overview</span></h1>
+                <p class="fs-5">Import-Export Code or IEC registration is mandatory for every person and organization engaged in importing and exporting activities from India. Such a 10-digit code issued by the Directorate General of Foreign Trade (DGFT) is necessitated for carrying out customs clearance, export benefits, and expansion in international markets.</p>
+                <p class="fs-5">If a firm is eligible, then an IEC can be made applicable by a proprietorship, partnership, LLP, or a company. The procedure includes submitting documents such as PAN card, Aadhar card, mobile number, email address, and other details required for registration. The whole procedure is online, ensuring there is no hitch in applying for the IEC.</p>
+
+            </div>
+            <div class="col-lg-4 d-flex align-items-center">
+                <img src="https://assets.vakilsearch.com/live-images/IecRegistration.svg" height="350" width="350">
+            </div>
+            <p class="fs-5">Vakilsearch takes the client through the efficient process of getting an IEC. Obtaining an IEC requires a PAN card, address proof, bank certificate, and DSC. Vakilsearch makes it an easy online process; the registration is quick and hassle-free.</p>
+            <p class="fs-5">An IEC is valid for life and does not require annual renewal. With an IEC, businesses can quickly enter foreign markets, access government incentives, and handle trade. Vakilsearch ensures that your company follows legal documents for easy penetration into international markets.</p>
+
+        </div>
+
+        <div class="border p-4 rounded-3 bg-warning-subtle text-center mt-5">
+            <h2 class="fw-bold mb-3"><span class="text-green">What</span> is an Import Export Code (IEC)?</h2>
+            <p>A 10-digit identification number assigned by the Directorate General of Foreign Trade in India is called the Import Export Code, or IEC for short. It is an important ID number for those who engage in international trade, whether businesses or individuals. A company cannot engage in any global trade without the IEC.</p>
+        </div>
+
+        <div class="row mt-5 pt-5">         
+            <div class="col-9">
+                <h1 class="fw-bold pb-2"><span class="text-green">Why</span> is IEC Important for Businesses?</h1>
+                <p class="fs-5">An IEC is very important for any company or business as it allows entry into international markets, makes customs clearance easier, ensures that all trade regulations are complied with, and brings business government export benefits. By simplifying such transactions, an IEC makes trade with other countries easier and enhances the possibilities of exporting.</p>
+            </div>
+            <div class="col-3">
+                <img src="https://assets.vakilsearch.com/live-images/IecImportance.svg" height="200" width="196">
+            </div>
+        </div>
+
+        <div class="row mt-5 pt-5"> 
+            <div class="col-4">
+                <img src="https://assets.vakilsearch.com/live-images/HowToRegisterIEC.svg" height="210" width="326">
+            </div>        
+            <div class="col-8">
+                <h1 class="fw-bold pb-2"><span class="text-green">How to</span> Register for IEC in India?</h1>
+                <p class="fs-5">An IEC can be very easily registered. All the businesses have to do is provide a PAN card, an address proof, and a bank certificate, at times a Digital Signature Certificate (DSC). The whole procedure is done sitting online on the DGFT website. Once registered, the IEC is valid lifetime, and no yearly update is required. It thus becomes very easy for businesses to start trading internationally.</p>
+            </div>         
+        </div>
+
+        <div class="mt-5">
+            <h2 class="fw-bold pb-2">Understanding Import Export Code (IEC)</h2>
+            <p class="fs-5">To engage in international trade, businesses need a unique identifier. This identifier is called the Import Export Code (IEC).</p>
+        </div>
+
+        <div class="mt-5">
+            <h2 class="fw-bold pb-2"><span class="text-green">Definition</span> and Purpose of IEC</h2>
+            <p class="fs-5">The Directorate General of Foreign Trade issues an import-export code, a 10-digit business identification number. Before one can attempt to start an import-export business in India, one must have an IEC. According to the current rules of India, no person can legally export or import products to or from India without having an IEC unless otherwise exempted.</p>
+        </div>
+
+        <div class="row mt-5">         
+            <div class="col-9">
+                <h2 class="fw-bold pb-2"><span class="text-green">Who Needs</span> an IEC?</h2>
+                <p class="fs-5">An Importer-Exporter Code (IEC) is important for anyone involved in international trade in India. Here's who needs one:</p>
+                <div class="d-lg-flex">
+                    <i class="fa-solid fa-arrows-to-dot text-green pt-2 pe-2"></i>
+                    <p class="fs-5"><b>Individuals:</b>Anyone who wants to trade internationally, either for personal or business purposes, must get an IEC.</p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa-solid fa-arrows-to-dot text-green pt-2 pe-2"></i>
+                    <p class="fs-5"><b>Companies: </b>All businesses, whether they are small startups or large firms, need an IEC to import and export goods.</p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa-solid fa-arrows-to-dot text-green pt-2 pe-2"></i>
+                    <p class="fs-5"><b>Organizations: </b>This includes partnerships, trusts, and cooperatives that want to trade internationally.</p>
+                </div>
+              
+            </div>
+            <div class="col-3">
+                <img src="https://assets.vakilsearch.com/live-images/UnderstandingIEC.svg" height="280" width="268">
+            </div>
+            <h4 class="fw-bold pt-2 pb-2">Key Points:</h4>
+            <div class="d-lg-flex">
+                <i class="fa-solid fa-arrows-to-dot text-green pt-2 pe-2"></i>
+                <p class="fs-5"><b>Mandatory Requirement: </b>No one can import or export goods without an IEC, unless they have a specific exemption.</p>
+            </div>
+            <div class="d-lg-flex">
+                <i class="fa-solid fa-arrows-to-dot text-green pt-2 pe-2"></i>
+                <p class="fs-5"><b>Importance: </b>The IEC is a unique business identification number. It helps businesses follow trade rules and regulations.</p>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h2 class="fw-bold pb-3">Exporters (Goods and Services)</h2>
+            <p class="fs-5">Exports are goods and services made in one country and sold to buyers in another. Here’s what you need to know:</p>
+            <div class="d-lg-flex">
+                <i class="fa-solid fa-arrows-to-dot text-green pt-2 pe-2"></i>
+                <p class="fs-5"><b>Economic Ownership:</b> Exports happen when ownership of goods changes from a resident to a non-resident.</p>
+            </div>
+            <div class="d-lg-flex">
+                <i class="fa-solid fa-arrows-to-dot text-green pt-2 pe-2"></i>
+                <p class="fs-5"><b>Zero-Rated Supplies:</b> Exports are usually not taxed, either on the input or final product.</p>
+            </div>
+            <div class="d-lg-flex">
+                <i class="fa-solid fa-arrows-to-dot text-green pt-2 pe-2"></i>
+                <p class="fs-5"><b>Tax Refunds:</b> Businesses can pay Integrated Goods and Services Tax (IGST) on exports. They can apply for a refund later.</p>
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <h2 class="fw-bold pb-3">Importers</h2>
+            <p class="fs-5">An importer brings goods into a country. This includes:</p>
+            <div class="d-lg-flex">
+                <i class="fa-solid fa-arrows-to-dot text-green pt-2 pe-2"></i>
+                <p class="fs-5"><b>Owners:</b> People or businesses who buy goods.</p>
+            </div>
+            <div class="d-lg-flex">
+                <i class="fa-solid fa-arrows-to-dot text-green pt-2 pe-2"></i>
+                <p class="fs-5"><b>Agents:</b> People who act for buyers or sellers.</p>
+            </div>
+            <div class="d-lg-flex">
+                <i class="fa-solid fa-arrows-to-dot text-green pt-2 pe-2"></i>
+                <p class="fs-5"><b>Registered Entities:</b> Subsidiaries or branch offices that handle imports.</p>
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <h4 class="fw-bold pt-2 pb-2">Key Points:</h4>
+            <div class="d-lg-flex">
+                <i class="fa-solid fa-arrows-to-dot text-green pt-2 pe-2"></i>
+                <p class="fs-5"><b>Documentation: </b>Imports require proper documents, like invoices and freight papers.</p>
+            </div>
+            <div class="d-lg-flex">
+                <i class="fa-solid fa-arrows-to-dot text-green pt-2 pe-2"></i>
+                <p class="fs-5"><b>Licenses: </b>Import licenses are needed, and the IEC is required for customs clearance.</p>
+            </div>
+            <div class="d-lg-flex">
+                <i class="fa-solid fa-arrows-to-dot text-green pt-2 pe-2"></i>
+                <p class="fs-5"><b>Unique Identifier: </b>The IEC is a 10-digit code issued by the DGFT. It ensures smooth trade processes.</p>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h1 class="fw-bold pb-3"><span class="text-green">Benefits</span> of Obtaining an IEC</h1>
+            <p class="fs-5">An Importer Exporter Code (IEC) offers several advantages to businesses involved in international trade. Here are the key benefits of IEC Registration :</p>
+            
+            <h5 class="fw-bold pt-2 pb-2">Advantages of Acquiring IEC</h5>
+            <p class="fs-5">For any business engaged in international trade, an IEC has a host of advantages. Here are a few of those advantages of IEC Registration:</p>
+            
+            <h5 class="fw-bold pt-2 pb-2">Access to the World Market</h5>
+            <p class="fs-5">The IEC allows the market reach of businesses around the globe and places a product in front of the world. This code streamlines international trade transactions and removes extra paperwork or the necessity to renew it frequently. With the IEC, businesses extend their reach beyond India.</p>
+            
+            <h5 class="fw-bold pt-2 pb-2">Government Schemes and Benefits</h5>
+            <p class="fs-5">The schemes and the associated tax benefits offered by the government can be availed for developing international trade by businesses with an IEC. Registration has been made simple by the DGFT through its website. The applicant need not possess a Digital Signature Certificate for registration. Even non-registered businesses can apply; Aadhaar authentication is also accepted.</p>
+            
+            <h5 class="fw-bold pt-2 pb-2">Opportunities for Business Expansion</h5>
+            <p class="fs-5">The IEC helps businesses grow by opening opportunities for expansion globally. It enhances business relationships in quality while observing trade with proper respect of customs regulations. The code offers lifetime validity, hence a long-term solution for companies seeking operations on an international level.</p>
+        
+        </div>
+
+
+     
+        
+    </div>
+
+
+    <div class="box15-footer back-green mt-5">
+        <div class="container pt-5 pb-4">
+            <div class="row row-cols-lg-3">
+                <div class="text-white ps-5 pe-5">
+                    <h3>CORPORATE AND LEGAL SOLUTIONS</h3>
+                    <div class="line"></div>
+                    <p class="pt-4">Goods and Service Taxes</p>
+                    <p>Company Registration</p>
+                    <p>Non-governmental organization (NGO)</p>
+                    <p>Intellectual Property (IP)</p>
+
+                    <h4 class="pt-3 pb-2">Follow Us</h4>
+                    <div>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-twitter ps-3"></i>
+                        <i class="fa-brands fa-facebook-f ps-3"></i>
+                        <i class="fa-brands fa-instagram ps-3"></i>
+                        <i class="fa-brands fa-youtube ps-3"></i>
+                    </div>
+                </div>
+
+                <div class="text-white">
+                    <h3>FINANCE AND INVESTMENT CALUCATORS</h1>
+                        <div class="line"></div>
+                        <div>
+                            <p class="pt-4">Gratuity Calculator</p>
+                            <p>Pay Commission of India</p>
+                            <p>Business Setup Calculator</p>
+                            <p>Simple Compound Interest Calculator</p>
+                            <p>Home Loan EMI Calculator</p>
+                            <p>Mutual Fund Returns Calculator</p>
+                            <p>Retirement Planning Calculator</p>
+                        </div>
+
+                </div>
+
+                <div class="text-white">
+                    <h3>BUSINESS AND LEGAL RESOURCES</h1>
+                        <div class="line"></div>
+                        <div>
+                            <p class="pt-4">Consumer Complaint</p>
+                            <p class="pt-2">HSN Code</p>
+                            <p class="pt-2">
+                                Patent Search</p>
+                            <p class="pt-2">
+                                Trademark Search</p>
+                            <p class="pt-2">Company Name Search</p>
+
+                        </div>
+
+                </div>
+            </div>
+            <div class="line2 mt-5"></div>
+            <div class="copyright">
+                <p class="text-white pt-1 text-center">© Copyrights. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+     <!-- MDB -->
+     <script type="text/javascript" src="./static/js/mdb.umd.min.js"></script>
+     <!-- Custom scripts -->
+     <script type="text/javascript"></script>
+ 
+     <script>
+         const links = '<a class="list-group-item list-group-item-action" href="#">Company Registration</a> <a class="list-group-item list-group-item-action" href="./private.html">Private Limited Company</a> <a class="list-group-item list-group-item-action" href="./limited-liability.html">Limited Liability Partnership</a> <a class="list-group-item list-group-item-action" href="./one-person.html">One Person Company</a> <a class="list-group-item list-group-item-action" href="./sole.html">Sole Proprietorship</a> <a class="list-group-item list-group-item-action" href="./nidhi.html">Nidhi Company</a> <a class="list-group-item list-group-item-action" href="./patnership.html">Partnership Firm</a> <a class="list-group-item list-group-item-action" href="./startup.html">Startup India Registration</a>';
+         document.getElementById("bussinessSetuplistItems").innerHTML = links;
+         function getListItems(event) {
+             const id = event.target.id;
+             if (id === "companyRegistration") {
+                 const links = '<a class="list-group-item list-group-item-action" href="#">Company Registration</a> <a class="list-group-item list-group-item-action" href="./private.html">Private Limited Company</a> <a class="list-group-item list-group-item-action" href="./limited-liability.html">Limited Liability Partnership</a> <a class="list-group-item list-group-item-action" href="./one-person.html">One Person Company</a> <a class="list-group-item list-group-item-action" href="./sole.html">Sole Proprietorship</a> <a class="list-group-item list-group-item-action" href="./nidhi.html">Nidhi Company</a> <a class="list-group-item list-group-item-action" href="./patnership.html">Partnership Firm</a> <a class="list-group-item list-group-item-action" href="./startup.html">Startup India Registration</a>';
+                 document.getElementById("bussinessSetuplistItems").innerHTML = links;
+             }
+ 
+             if (id === "internationalBusinessSetup") {
+                 const links = '<a class="list-group-item list-group-item-action" href="#">International Business Setup</a> <a class="list-group-item list-group-item-action" href="./us.html">US Incorporation</a> <a class="list-group-item list-group-item-action" href="./dubai.html">Dubai Company Incorporation</a>';
+                 document.getElementById("bussinessSetuplistItems").innerHTML = links;
+             }
+ 
+             if (id === "licences&Registration") {
+                 const links = '<a class="list-group-item list-group-item-action" href="#">Licenses & Registrations</a> <a class="list-group-item list-group-item-action" href="./udyam.html">Udyam/MSME Registration</a> <a class="list-group-item list-group-item-action" href="./iso.html">ISO Certification</a> <a class="list-group-item list-group-item-action" href="./fssai.html">FSSAI [Food License]</a> <a class="list-group-item list-group-item-action" href="./iec.html">IEC [Import/Export Code]</a>';
+                 document.getElementById("bussinessSetuplistItems").innerHTML = links;
+             }
+ 
+             if (id === "webDevelopment") {
+                 const links = '<a class="list-group-item list-group-item-action" href="#">Web Development</a> <a class="list-group-item list-group-item-action" href="./web.html">Web/E-Commerce Website Development</a>';
+                 document.getElementById("bussinessSetuplistItems").innerHTML = links;
+             }
+         }
+ 
+         var menu = document.querySelector(".mega-menu-business-setup");
+         menu.style.display === "static";
+         function displayMenuItem(event) {
+             var menu = document.querySelector(".mega-menu-business-setup");
+             menu.style.display === "static";
+         }
+     </script>
+ 
+ 
+     <script>
+         const taxLinks = '<a class="list-group-item list-group-item-action" href="#">GST and Other Indirect Tax</a> <a class="list-group-item list-group-item-action" href="./gst.html">GST Registration</a> <a class="list-group-item list-group-item-action" href="./gst-filling.html">GST Filing</a> <a class="list-group-item list-group-item-action" href="./gst-revocation.html">GST Cancellation and Revocation</a>';
+         document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+         function getListItemsTax(event) {
+             const id = event.target.id;
+             if (id === "gstandOtherIndirectTax") {
+                 const taxLinks = '<a class="list-group-item list-group-item-action" href="#">GST and Other Indirect Tax</a> <a class="list-group-item list-group-item-action" href="./gst.html">GST Registration</a> <a class="list-group-item list-group-item-action" href="./gst-filling.html">GST Filing</a> <a class="list-group-item list-group-item-action" href="./gst-revocation.html">GST Cancellation and Revocation</a>';
+                 document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+             }
+ 
+             if (id === "changesinPvtLtdCompany") {
+                 const taxLinks = '<a class="list-group-item list-group-item-action" href="#">Changes in Pvt Ltd Company</a> <a class="list-group-item list-group-item-action" href="#">Add a Director</a> <a class="list-group-item list-group-item-action" href="#">Remove a Director</a> <a class="list-group-item list-group-item-action" href="#">Increase Authorized Capital</a> <a class="list-group-item list-group-item-action" href="#">Close the Pvt Ltd Company</a> <a class="list-group-item list-group-item-action" href="#">Strike off Company</a> <a class="list-group-item list-group-item-action" href="#">Change Objective/Activity</a> <a class="list-group-item list-group-item-action" href="#">Change Address</a>';
+                 document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+             }
+ 
+             if (id === "changesinLimitedLiabilityPartnership") {
+                 const taxLinks = '<a class="list-group-item list-group-item-action" href="#">Changes In Limited Liability Partnership</a> <a class="list-group-item list-group-item-action" href="#">Add Designated Partner</a> <a class="list-group-item list-group-item-action" href="#">Changes to LLP Agreement</a> <a class="list-group-item list-group-item-action" href="#">Close the LLP</a>';
+                 document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+             }
+ 
+             if (id === "mandatoryAnnualFilings") {
+                 const taxLinks = '<a class="list-group-item list-group-item-action" href="#">Mandatory Annual Filings</a> <a class="list-group-item list-group-item-action" href="./annual-compliance.html">Annual Compliance Services</a> <a class="list-group-item list-group-item-action" href="./llp-annual-filling.html">LLP Annual Filings</a> <a class="list-group-item list-group-item-action" href="./secretarial-audit.html">Secretarial Audit</a>';
+                 document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+             }
+ 
+             if (id === "labourCompliance") {
+                 const taxLinks = '<a class="list-group-item list-group-item-action" href="#">Labour Compliance</a> <a class="list-group-item list-group-item-action" href="./pf-registration.html">Provident Fund (PF) Registration</a> <a class="list-group-item list-group-item-action" href="./esi-registration.html">ESI Registration</a> <a class="list-group-item list-group-item-action" href="./pt-registration.html">Professional Tax Registration</a><a class="list-group-item list-group-item-action" href="./labour.html">Labour Licence</a> <a class="list-group-item list-group-item-action" href="#">GHMC Trade Licence</a>';
+                 document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+             }
+ 
+             if (id === "accounting&Tax") {
+                 const taxLinks = '<a class="list-group-item list-group-item-action" href="#">Accounting & Tax</a> <a class="list-group-item list-group-item-action" href="#">Accounting and Book-keeping</a> <a class="list-group-item list-group-item-action" href="#">TDS Return Filing</a> <a class="list-group-item list-group-item-action" href="./itr.html">Individual Income Tax Filing</a> <a class="list-group-item list-group-item-action" href="./itr-filling-sole.html">Proprietorship Tax Return Filing</a> <a class="list-group-item list-group-item-action" href="./itr-llp.html">ITR for LLP</a> <a class="list-group-item list-group-item-action" href="#">Corporate Tax</a> <a class="list-group-item list-group-item-action" href="./ita.html">Income Tax Assessment</a> <a class="list-group-item list-group-item-action" href="./itn-response.html">Income Tax Notice</a>';
+                 document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+             }
+         }
+ 
+         var menu = document.querySelector(".mega-menu-tax-compliance");
+         menu.style.display === "static";
+         function displayMenuItemTax(event) {
+             var menu = document.querySelector(".mega-menu-tax-compliance");
+             menu.style.display === "static";
+         }
+     </script>
+ 
+     <script>
+         const trademarkLinks = '<a class="list-group-item list-group-item-action" href="#">Trademark</a> <a class="list-group-item list-group-item-action" href="./trademark.html">Trademark Registration</a>';
+         document.getElementById("trademark&IpListItems").innerHTML = trademarkLinks;
+         function getListItemsTrademark(event) {
+             const id = event.target.id;
+             if (id === "tradeMark") {
+                 const trademarkLinks = '<a class="list-group-item list-group-item-action" href="#">Trademark</a> <a class="list-group-item list-group-item-action" href="./trademark.html">Trademark Registration</a>';
+                 document.getElementById("trademark&IpListItems").innerHTML = trademarkLinks;
+             }
+ 
+             if (id === "copyRight") {
+                 const trademarkLinks = '<a class="list-group-item list-group-item-action" href="#">Copyright</a> <a class="list-group-item list-group-item-action" href="#">Copyright Registration</a> <a class="list-group-item list-group-item-action" href="#">Copyright Music</a>';
+                 document.getElementById("trademark&IpListItems").innerHTML = trademarkLinks;
+             }
+ 
+         }
+ 
+         var menu = document.querySelector(".mega-menu-trademark-ip");
+         menu.style.display === "static";
+         function displayMenuItemTrademark(event) {
+             var menu = document.querySelector(".mega-menu-trademark-ip");
+             menu.style.display === "static";
+         }
+     </script>
+ 
+     <script>
+     const othersLinks = '<a class="list-group-item list-group-item-action" href="#">NGO Registration</a> <a class="list-group-item list-group-item-action" href="./ngo-registration.html">NGO</a> <a class="list-group-item list-group-item-action" href="./section-company-registration.html">Section 8 Company</a> <a class="list-group-item list-group-item-action" href="./trust-registration.html">Trust Registration</a> <a class="list-group-item list-group-item-action" href="./online-society.html">Society Registration</a> <a class="list-group-item list-group-item-action bold" href="#">NGO Compliance</a> <a class="list-group-item list-group-item-action" href="./ngo-compliance.html">NGO Compliance</a> <a class="list-group-item list-group-item-action" href="./section8-company-compliance.html">Section 8 Compliance</a> <a class="list-group-item list-group-item-action" href="./csr-1-registration.html">CSR-1 Filing</a> <a class="list-group-item list-group-item-action" href="./section-80G-12A-registration.html">Sec. 80G & Sec. 12A</a> <a class="list-group-item list-group-item-action" href="./darphan-registration.html">Darpan Registration</a> <a class="list-group-item list-group-item-action" href="./fcra-registration.html">FCRA Registration</a>';
+     document.getElementById("othersListItems").innerHTML = othersLinks;
+     function getListItemsOthers(event) {
+         const id = event.target.id;
+         if (id === "ngo") {
+             const othersLinks = '<a class="list-group-item list-group-item-action" href="#">NGO Registration</a> <a class="list-group-item list-group-item-action" href="./ngo-registration.html">NGO</a> <a class="list-group-item list-group-item-action" href="./section-company-registration.html">Section 8 Company</a> <a class="list-group-item list-group-item-action" href="./trust-registration.html">Trust Registration</a> <a class="list-group-item list-group-item-action" href="./online-society.html">Society Registration</a> <a class="list-group-item list-group-item-action bold" href="#">NGO Compliance</a> <a class="list-group-item list-group-item-action" href="./ngo-compliance.html">NGO Compliance</a> <a class="list-group-item list-group-item-action" href="./section8-company-compliance.html">Section 8 Compliance</a> <a class="list-group-item list-group-item-action" href="./csr-1-registration.html">CSR-1 Filing</a> <a class="list-group-item list-group-item-action" href="./section-80G-12A-registration.html">Sec. 80G & Sec. 12A</a> <a class="list-group-item list-group-item-action" href="./darphan-registration.html">Darpan Registration</a> <a class="list-group-item list-group-item-action" href="./fcra-registration.html">FCRA Registration</a>';
+             document.getElementById("othersListItems").innerHTML = othersLinks;
+         }
+ 
+         if (id === "fullyFledgeMoneyChangesLicence") {
+             const othersLinks = '<a class="list-group-item list-group-item-action" href="./ffmc.html"> Fully Fledge Money Changes Licence</a>';
+             document.getElementById("othersListItems").innerHTML = othersLinks;
+         }
+ 
+ 
+         if (id === "ca/Cs") {
+             const othersLinks = '<a class="list-group-item list-group-item-action" href="#">CA/CS</a> <a class="list-group-item list-group-item-action" href="./net-worth.html">Net Worth Certificate for VISA</a> <a class="list-group-item list-group-item-action" href="./property-valuation.html">Property Valuation Certificate</a> <a class="list-group-item list-group-item-action" href="./f&o-tax-audit.html">Future & Options (F&O) Tax Audit</a> <a class="list-group-item list-group-item-action" href="./cma.html">Project Report/(CMA) </a>';
+             document.getElementById("othersListItems").innerHTML = othersLinks;
+         }
+ 
+ 
+         if (id === "rera") {
+             const othersLinks = '<a class="list-group-item list-group-item-action" href="./rera.html">RERA</a>';
+             document.getElementById("othersListItems").innerHTML = othersLinks;
+         }
+ 
+     }
+ 
+     var menu = document.querySelector(".mega-menu-others");
+     menu.style.display === "static";
+     function displayMenuItemOthers(event) {
+         var menu = document.querySelector(".mega-menu-others");
+         menu.style.display === "static";
+     }
+     </script>
+ 
+     <script>
+     // const resourcesLinks = '<a class="list-group-item list-group-item-action" href="#">Taxation</a> <a class="list-group-item list-group-item-action" href="./ngo-registration.html">NGO</a> <a class="list-group-item list-group-item-action" href="./section-company-registration.html">Section 8 Company</a> <a class="list-group-item list-group-item-action" href="./trust-registration.html">Trust Registration</a> <a class="list-group-item list-group-item-action" href="./online-society.html">Society Registration</a>';
+     document.getElementById("resourcesListItems").innerHTML = resourcesLinks;
+     function getListItemsResources(event) {
+         const id = event.target.id;
+         if (id === "taxation") {
+             const resourcesLinks = '<a class="list-group-item list-group-item-action" href="#">Taxation</a> <a class="list-group-item list-group-item-action" href="./taxation.html">Taxation</a>';
+             document.getElementById("resourcesListItems").innerHTML = resourcesLinks;
+         }
+ 
+         if (id === "accounting") {
+             const resourcesLinks = '<a class="list-group-item list-group-item-action" href="#">Accounting</a> <a class="list-group-item list-group-item-action" href="./accounting.html">Accounting</a>';
+             document.getElementById("resourcesListItems").innerHTML = resourcesLinks;
+         }
+ 
+ 
+         if (id === "businessConsulting") {
+             const resourcesLinks = '<a class="list-group-item list-group-item-action" href="#">Business Consulting</a> <a class="list-group-item list-group-item-action" href="./consulting.html">Business Consulting</a>';
+             document.getElementById("resourcesListItems").innerHTML = resourcesLinks;
+         }
+ 
+     }
+ 
+     var menu = document.querySelector(".mega-menu-resources");
+     menu.style.display === "static";
+     function displayMenuItemResources(event) {
+         var menu = document.querySelector(".mega-menu-resources");
+         menu.style.display === "static";
+     }
+     </script>
+ 
+ <script>
+    // const barsLinks = '<a class="list-group-item list-group-item-action" href="#">Taxation</a> <a class="list-group-item list-group-item-action" href="./ngo-registration.html">NGO</a> <a class="list-group-item list-group-item-action" href="./section-company-registration.html">Section 8 Company</a> <a class="list-group-item list-group-item-action" href="./trust-registration.html">Trust Registration</a> <a class="list-group-item list-group-item-action" href="./online-society.html">Society Registration</a>';
+    document.getElementById("barsListItems").innerHTML = barsLinks;
+    function getListItemsBars(event) {
+        const id = event.target.id;
+        if (id === "patnerWithUs") {
+            const barsLinks = '<a class="list-group-item list-group-item-action" href="#">Patner With Us</a> <a class="list-group-item list-group-item-action" href="./patnerwithus.html">Patner With Us</a>';
+            document.getElementById("barsListItems").innerHTML = barsLinks;
+        }
+
+        if (id === "talktoaExpert") {
+            const barsLinks = '<a class="list-group-item list-group-item-action" href="#">Talk to a Expert</a> <a class="list-group-item list-group-item-action" href="./talk.html">Talk to a Expert</a>';
+            document.getElementById("barsListItems").innerHTML = barsLinks;
+        }
+
+
+    }
+
+    var menu = document.querySelector(".mega-menu-bars");
+    menu.style.display === "static";
+    function displayMenuItemBars(event) {
+        var menu = document.querySelector(".mega-menu-bars");
+        menu.style.display === "static";
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copyright Registration</title>
+    <link rel="stylesheet" href="./css/copyright.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<!-- Google Fonts Roboto -->
+<!-- <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" /> -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="./static/css/mdb.min.css"/>
+
+<style>
+   
+    .mega-menu-left-list-items p,
+    .mega-menu-right-list-items a {
+        border: none;
+    }
+
+    .mega-menu {
+        background-color: #f7f7f7;
+        max-height: 500px;
+        overflow: scroll;
+        /* overflow-x: hidden; */
+    }
+
+    .mega-menu-left-list-items p:hover {
+        background-color: #ffff;
+        color: #119083;
+        cursor: pointer;
+    }
+
+    .mega-menu-right-list-items a:nth-child(1),.bold {
+        font-size: 18px;
+        font-weight: bold;
+        width: max-content;
+        /* border-bottom: solid 1px #007bff; */
+        /* padding-left: 0px; */
+    }
+
+    .mega-menu-right-list-items a:hover {
+        color: #119083;
+        background-color: #f7f7f7;
+    }
+
+    .mega-menu {
+        width: 52%;
+    }
+
+    @media (max-width: 992px) {
+        .mega-menu {
+            width: 100%;
+        }
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 2px;
+    }
+
+  
+</style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <a class="me-auto" href="./index.html">
+                <img src="http://127.0.0.1:5500/css/images/new%20logo.png" alt="Scalexcel Logo" style="width: 200px;" />
+            </a>
+            <button data-mdb-button-init class="float-end navbar-toggler px-0" type="button" data-mdb-collapse-init
+                data-mdb-target="#navbarExample2" aria-controls="navbarExample2" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarExample2">
+                <!-- Left links -->
+                <ul class="navbar-nav ms-auto ps-lg-0" style="padding-left: 0.15rem">
+                    <!-- Navbar dropdown -->
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Business Setup
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-business-setup"
+                            aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="companyRegistration" onclick="displayMenuItem(event)"
+                                                onmouseover="getListItems(event);"><i class="far fa-building"></i>
+                                                Company Registration <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="internationalBusinessSetup" onmouseover="getListItems(event);">
+                                                <i class="far fa-building"></i>
+                                                International Business Setup <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="licences&Registration" onmouseover="getListItems(event);">
+                                                <i class="far fa-building"></i>
+                                                Licenses & Registrations <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3" id="webDevelopment"
+                                                onmouseover="getListItems(event);"><i class="far fa-building"></i>
+                                                Web Development <i class="float-end pt-1 fas fa-angle-right"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="bussinessSetuplistItems">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Tax & Compliance
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-tax-compliance"
+                            aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="gstandOtherIndirectTax" onclick="displayMenuItemTax(event)"
+                                                onmouseover="getListItemsTax(event);"><i class="far fa-building"></i>
+                                                GST and Other Indirect Tax <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="changesinPvtLtdCompany" onmouseover="getListItemsTax(event);">
+                                                <i class="far fa-building"></i>
+                                                Changes in Pvt Ltd Company <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="changesinLimitedLiabilityPartnership"
+                                                onmouseover="getListItemsTax(event);"><i class="far fa-building"></i>
+                                                Changes In Limited Liability Partnership <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="mandatoryAnnualFilings" onmouseover="getListItemsTax(event);">
+                                                <i class="far fa-building"></i>
+                                                Mandatory Annual Filings <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3" id="labourCompliance"
+                                                onmouseover="getListItemsTax(event);"><i class="far fa-building"></i>
+                                                Labour Compliance <i class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3" id="accounting&Tax"
+                                                onmouseover="getListItemsTax(event);"><i class="far fa-building"></i>
+                                                Accounting & Tax <i class="float-end pt-1 fas fa-angle-right"></i></p>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="tax&ComplianceListItems">
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Trademark & IP
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-trademark-ip"
+                            aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="tradeMark" onclick="displayMenuItemTrademark(event)"
+                                                onmouseover="getListItemsTrademark(event);"><i
+                                                    class="far fa-building"></i>
+                                                Trademark <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3" id="copyRight"
+                                                onmouseover="getListItemsTrademark(event);"><i class="far fa-building"></i>
+                                                Copyright <i class="float-end pt-1 fas fa-angle-right"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="trademark&IpListItems">
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Others
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-others" aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="ngo" onclick="displayMenuItemOthers(event)"
+                                                onmouseover="getListItemsOthers(event);"><i class="far fa-building"></i>
+                                                NGO <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="fullyFledgeMoneyChangesLicence" onmouseover="getListItemsOthers(event);">
+                                                <i class="far fa-building"></i>
+                                                Fully Fledge Money Changes Licence <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="ca/Cs" onclick="displayMenuItemOthers(event)"
+                                                onmouseover="getListItemsOthers(event);"><i class="far fa-building"></i>
+                                                CA/CS <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                            id="rera" onclick="displayMenuItemOthers(event)"
+                                            onmouseover="getListItemsOthers(event);"><i class="far fa-building"></i>
+                                            RERA <i class="float-end pt-1 fas fa-angle-right"></i>
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="othersListItems">
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-resources" aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="taxation" onclick="displayMenuItemResources(event)"
+                                                onmouseover="getListItemsResources(event);"><i class="far fa-building"></i>
+                                                Taxation <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="accounting" onclick="displayMenuItemResources(event)"
+                                                onmouseover="getListItemsResources(event);">
+                                                <i class="far fa-building"></i>
+                                                Accounting <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="businessConsulting" onclick="displayMenuItemResources(event)"
+                                                onmouseover="getListItemsResources(event);"><i class="far fa-building"></i>
+                                                Business Consulting <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="resourcesListItems">
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <a class="nav-link fw-bold" href="./blog.html" id="navbarDropdown"
+                    role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                    Blog
+                    </a>
+
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-bars" aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="patnerWithUs" onclick="displayMenuItemBars(event)"
+                                                onmouseover="getListItemsBars(event);"><i class="far fa-building"></i>
+                                                Patner With Us <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="talktoaExpert" onclick="displayMenuItemBars(event)"
+                                                onmouseover="getListItemsBars(event);">
+                                                <i class="far fa-building"></i>
+                                                Talk to a Expert <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                          
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="barsListItems">
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-7">
+                <h1 class="fw-bold mb-5">Copyright Registration India</h1>
+                <div class="d-lg-flex pt-2">
+                    <i class="fa fa-circle-check text-green pt-2 pe-2"></i>
+                    <p class="fs-5">Start using © symbol with our Guaranteed 5-7 Days Filing T&C*.</p>
+                </div>
+                <div class="d-lg-flex pt-2">
+                    <i class="fa fa-circle-check text-green pt-2 pe-2"></i>
+                    <p class="fs-5">Transparent process through follow-up and regular updates. Filing your copyright
+                        starts from <span class="text-decoration-line-through">3999</span></p>
+                </div>
+                <div class="d-lg-flex pt-2">
+                    <i class="fa fa-circle-check text-green pt-2 pe-2"></i>
+                    <p class="fs-5">₹2999 + Govt fees </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 ms-5 shadow-lg rounded-2 position-relative bg-warning-subtle">
+                <div class="position-absolute top-0 start-0 translate-start">
+                    <img src="./css/images/img.png" height="45" width="200">
+                </div>
+                <form>
+                <h3 class="text-center mt-5 pt-2">Copy Registration</h3>
+                    <div class="mb-1">
+                      <label class="form-label fw-semibold ps-1">Email</label>
+                      <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                    </div>
+
+                    <div class="mb-1">
+                        <label for="mobile" class="col-form-label fw-semibold ps-1">Mobile No</label>
+                        <input type="text" class="form-control" id="mobile" placeholder="Mobile No" required>
+                      </div>
+
+                      <div class="mb-1">
+                        <label for="city" class="col-form-label fw-semibold ps-1">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="City">
+                      </div>
+                <div class="d-lg-flex justify-content-center mt-4 mb-3">
+                    <button type="submit" class="px-5 py-2 text-white back-green border-0 rounded-3 fw-bold fs-6">Get Started</button>
+                </div>
+                  </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container">
+
+        <h1 class="fw-bold text-center mb-4 mt-5">Types of Creative Work</h1>
+
+        <div class="row row-cols-lg-4 justify-content-center mt-5">
+            <div class="m-4 p-2 bg-warning-subtle rounded-1">
+                <div class="d-lg-flex">
+                    <div class="text-center mt-2">
+                        <img src="https://assets.vakilsearch.com/copyHarry.svg" height="106" width="106">
+                    </div>
+                    <div>
+                        <h5 class="fw-bold text-center pt-2">Literary work</h5>
+                        <p class="ps-3 fs-6">Books, Fiction, Non fiction catalogs, Ad copy, Directories & Poetry</p>
+                    </div>
+                </div>
+                <div class="d-flex mt-4 justify-content-center">
+                    <button class="fs-5 back-green text-white border-0 px-5 py-1 rounded-2">Get for <span
+                            class="text-decoration-line-through">3999</span> <b>2999</b></button>
+
+                </div>
+            </div>
+
+            <div class="m-4 p-2 bg-warning-subtle rounded-1">
+                <div class="d-lg-flex">
+                    <div class="text-center mt-2">
+                        <img src="https://assets.vakilsearch.com/copySoftware.svg" height="106" width="106">
+                    </div>
+                    <div>
+                        <h5 class="fw-bold text-center pt-2">Software/<br>Website/Apps</h5>
+                        <p class="ps-3 fs-6">Website, Mobile apps, Computer programs & Database</p>
+                    </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-center">
+                    <button class="fs-5 back-green text-white border-0 px-5 py-1 rounded-2">Get for <span
+                            class="text-decoration-line-through">3999</span> <b>2999</b></button>
+
+                </div>
+            </div>
+
+            <div class="m-4 p-2 bg-warning-subtle rounded-1">
+                <div class="d-lg-flex">
+                    <div class="text-center mt-2">
+                        <img src="https://assets.vakilsearch.com/copyMusic.svg" height="106" width="106">
+                    </div>
+                    <div>
+                        <h5 class="fw-bold text-center pt-2">Sound Record</h5>
+                        <p class="ps-3 fs-6">Music, Soundtracks & Sound Recording with underlying text</p>
+                    </div>
+                </div>
+                <div class="d-flex mt-5 justify-content-center">
+                    <button class="fs-5 back-green text-white border-0 px-5 py-1 rounded-2">Get for <span
+                            class="text-decoration-line-through">4999</span> <b>3499</b></button>
+
+                </div>
+            </div>
+    
+        </div>
+
+        <div class="row row-cols-lg-3 justify-content-center mt-3 pb-5">
+            <div class="m-4 p-2 bg-warning-subtle rounded-1">
+                <div class="d-lg-flex">
+                    <div class="text-center mt-2">
+                        <img src="https://assets.vakilsearch.com/copyArt.svg" height="106" width="106">
+                    </div>
+                    <div>
+                        <h5 class="fw-bold text-center pt-2">Visual & Performing Art</h5>
+                        <p class="ps-3 fs-6">2D or 3D artworks, Paintings, Photographs, Drama, Screenplays, Choreography, Scripts & Pantomime.</p>
+                    </div>
+                </div>
+                <div class="d-flex mt-1 justify-content-center">
+                    <button class="fs-5 back-green text-white border-0 px-5 py-1 rounded-2">Get for <span
+                            class="text-decoration-line-through">4999</span> <b>3999</b></button>
+
+                </div>
+            </div>
+
+            <div class="m-4 p-2 bg-warning-subtle rounded-1">
+                <div class="d-lg-flex">
+                    <div class="text-center mt-2">
+                        <img src="https://assets.vakilsearch.com/copyMotion.svg" height="106" width="106">
+                    </div>
+                    <div>
+                        <h5 class="fw-bold text-center pt-2">Motion Picture</h5>
+                        <p class="ps-3 fs-6">Documentaries, Video, TV shows, Animations, Feature films & Audio Visuals.</p>
+                    </div>
+                </div>
+                <div class="d-flex mt-4 justify-content-center">
+                    <button class="fs-5 back-green text-white border-0 px-5 py-1 rounded-2">Get for <span
+                            class="text-decoration-line-through">5999</span> <b>4999</b></button>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row row-cols-lg-3">
+            <div class="text-center">
+                <img src="https://assets.vakilsearch.com/expert.svg" height="62" width="62">
+                <h5 class="mt-4 fw-bold">Drafting of application within 48 hours</h5>
+                <p>Thorough examination by our experts</p>
+            </div>
+            <div class="text-center">
+                <img src="https://assets.vakilsearch.com/docu.svg" height="62" width="62">
+                <h5 class="mt-4 fw-bold pb-2">5 - 7 Days Process</h5>
+                <p>Copyright application filing & start using © symbol.</p>
+            </div>
+            <div class="text-center">
+                <img src="https://assets.vakilsearch.com/certificate.svg" height="62" width="62">
+                <h5 class="mt-4 fw-bold pb-2">0 - 9 Months Period</h5>
+                <p>Copyright certificate (upon approval)</p>
+            </div>
+
+        </div>
+
+        <div class="row mt-5 pt-5 mb-5">
+            <div class="col-lg-8">
+                <h2 class="fw-bold pb-3">Introduction to Copyright Registration in India</h2>
+                <p class="fs-5">Copyright Registration is an important process under copyright law that grants the copyright owner's exclusive rights over their original work, allowing them to control reproduction, distribution, public display, and adaptation. Copyright covers many types of work, including literary works, artistic works, musical works, dramatic works, computer programs, sound recordings, cinematograph films, and even computer software.</p>
+             
+            </div>
+            <div class="col-lg-4 d-flex align-items-center">
+                <img src="https://assets.vakilsearch.com/Introduction+to+Copyright+Registration+in+India.svg" height="350" width="343">
+            </div>
+
+        </div>
+
+        <div class="row mt-5 pt-5 mb-5">
+            <div class="col-lg-4 d-flex align-items-center">
+                <img src="https://assets.vakilsearch.com/What+is+Copyright_.svg" height="360" width="343">
+            </div>
+            <div class="col-lg-8">
+                <h2 class="fw-bold pb-3">What is Copyright?</h2>
+                <p class="fs-5">Copyright refers to a legal right granted over original literary, dramatic, musical, or artistic works, such as books, movies, paintings, and computer programs, as well as over sound recordings, which is a form of intellectual property law giving the creator exclusive rights to their work, including how it can be used.
+                </p>
+                <p class="fs-5">It protects the expression of ideas, information, but not ideas and information themselves. For example, it does not protect facts, ideas, systems, or methods of operation, but it may protect how those things are expressed.
+                </p>
+             
+            </div>
+        
+        </div>
+
+        <div class="row mt-5 pt-5 mb-5">
+            <div class="col-lg-8">
+                <h2 class="fw-bold pb-3">Importance of Copyright Registration</h2>
+                <p class="fs-5">Copyright registration protects the expression of ideas and information, but not the ideas and information themselves. For example, copyright doesn't protect facts, ideas, systems, or methods of operation, but it may protect how those things are expressed.
+                </p>
+                <p class="fs-5">To initiate a Copyright Application, creators or an authorised agent must submit Form XIV along with a Statement of Particulars and, if necessary, a Power of Attorney. Additional requirements, such as the nationality of the applicant and copies of the work (including source code for software), are essential for establishing ownership. Once the requisite fee is paid, the application enters the Copyright Registration Process.
+                </p>
+                <p class="fs-5">Whether the work is a published work or an unpublished work, registration provides significant legal protection and establishes a public record of ownership. In the event of copyright infringement, a registered copyright serves as prima facie evidence in a court of law, simplifying the enforcement of intellectual property rights. A Copyright Registration Certificate also allows copyright holders to seek statutory damages and other remedies in case of unauthorised use.
+                </p>        
+            </div>         
+            <div class="col-lg-4 d-flex align-items-center">
+                <img src="https://assets.vakilsearch.com/Importance+of+Copyright+Registration.svg" height="360" width="343">
+            </div>
+            <p class="fs-5">For creators in New Delhi and across India, the Indian Copyright Act is aligned with international standards, such as the Berne Convention, ensuring that copyright protection is recognised globally. Indian law, like the U.S. Copyright Office in the United States, upholds copyright for the lifetime of the author plus an additional 60 years. This Term of Copyright supports creators in maintaining the integrity and value of their work over time.
+            </p>
+            <p class="fs-5">Applicants can submit their Copyright Application either online via the official website for Online Copyright Registration or through traditional methods, each with a waiting period. The online portal provides a streamlined way to register creative content, while the offline route requires submitting documentation in person or by mail to the Register of Copyrights.
+            </p>
+            <p class="fs-5">Some cases may require a separate application or an objection certificate if ownership rights involve multiple parties. For commercial works such as motion pictures, Cinematography Films, and derivative works, copyright registration is invaluable for protecting the brand value and economic potential of creative assets.
+            </p>
+            <p class="fs-5">The Copyright Rules under Rule 70 outline the procedural requirements, and both published and unpublished works can benefit from this legal protection. Through registration, creators ensure their creative work remains protected, allowing them to reach a broader audience without the risk of unauthorised exploitation or entry into the public domain. Vakilsearch simplifies the entire Copyright Registration Process by providing expert guidance and end-to-end assistance. From filing the Copyright Application on the official website to ensuring that the requisite fee and documentation—such as Form XIV, Statement of Particulars, and Power of Attorney—are in order, Vakilsearch streamlines the journey. In case of objections raised by the Register of Copyrights, Vakilsearch supports applicants in preparing strong responses to resolve any issues promptly, allowing the registration to proceed smoothly.
+            </p>
+            <p class="fs-5">Vakilsearch also offers protection strategies for creators facing copyright infringement issues, helping them guide the legal avenues to assert their exclusive rights in a court of law. Whether you are dealing with unauthorized use or need assistance with statutory damages claims, Vakilsearch’s legal team provides dedicated support to safeguard your work. With expertise in both the Indian Copyright Act and international agreements like the Berne Convention, Vakilsearch enables creators to secure, protect, and fully monetize their creative work across a global market.
+            </p>
+         
+        
+        </div>
+
+        <div class="row mt-5 mb-5">
+            <div class="col-lg-4 d-flex align-items-center">
+                <img src="https://assets.vakilsearch.com/Overview+of+Copyright+Registration+Proces.svg" height="360" width="343">
+            </div>
+
+            <div class="col-lg-8">
+                <h2 class="fw-bold pb-3">Overview of the Copyright Registration Process in India</h2>
+                <p class="fs-5">The copyright registration process in India involves several steps, with the Copyright Office overseeing the formalisation of ownership for works under Indian copyright law:</p>
+                <p class="fs-5"><b>1. Application Submission:</b> Complete Form IV and include both the Statement of Particulars and Statement of Further Particulars detailing the work.</p>
+                <p class="fs-5"><b>2. Fee Payment:</b> Pay the required fee based on the category of work (literary, artistic, software, etc.).</p>
+                <p class="fs-5"><b>3. Issuance of Dairy Number:</b> After submission, the application receives a Dairy Number, which serves as an official acknowledgment.</p>
+                <p class="fs-5"><b>4. Handling Objections:</b> If any objections arise, applicants are notified and given the chance to resolve them.</p>
+                <p class="fs-5"><b>5. Certificate Issuance:</b> Once approved, a copyright certificate is issued, officially confirming ownership and providing reproduction and adaptation rights.</p>
+                
+               
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="box15-footer back-green mt-5">
+        <div class="container pt-5 pb-4">
+            <div class="row row-cols-lg-3">
+                <div class="text-white ps-5 pe-5">
+                    <h3>CORPORATE AND LEGAL SOLUTIONS</h3>
+                    <div class="line"></div>
+                    <p class="pt-4">Goods and Service Taxes</p>
+                    <p>Company Registration</p>
+                    <p>Non-governmental organization (NGO)</p>
+                    <p>Intellectual Property (IP)</p>
+
+                    <h4 class="pt-3 pb-2">Follow Us</h4>
+                    <div>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-twitter ps-3"></i>
+                        <i class="fa-brands fa-facebook-f ps-3"></i>
+                        <i class="fa-brands fa-instagram ps-3"></i>
+                        <i class="fa-brands fa-youtube ps-3"></i>
+                    </div>
+                </div>
+
+                <div class="text-white">
+                    <h3>FINANCE AND INVESTMENT CALUCATORS</h1>
+                        <div class="line"></div>
+                        <div>
+                            <p class="pt-4">Gratuity Calculator</p>
+                            <p>Pay Commission of India</p>
+                            <p>Business Setup Calculator</p>
+                            <p>Simple Compound Interest Calculator</p>
+                            <p>Home Loan EMI Calculator</p>
+                            <p>Mutual Fund Returns Calculator</p>
+                            <p>Retirement Planning Calculator</p>
+                        </div>
+
+                </div>
+
+                <div class="text-white">
+                    <h3>BUSINESS AND LEGAL RESOURCES</h1>
+                        <div class="line"></div>
+                        <div>
+                            <p class="pt-4">Consumer Complaint</p>
+                            <p class="pt-2">HSN Code</p>
+                            <p class="pt-2">
+                                Patent Search</p>
+                            <p class="pt-2">
+                                Trademark Search</p>
+                            <p class="pt-2">Company Name Search</p>
+
+                        </div>
+
+                </div>
+            </div>
+            <div class="line2 mt-5"></div>
+            <div class="copyright">
+                <p class="text-white pt-1 text-center">© Copyrights. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    
+
+      <!-- MDB -->
+      <script type="text/javascript" src="./static/js/mdb.umd.min.js"></script>
+      <!-- Custom scripts -->
+      <script type="text/javascript"></script>
+  
+      <script>
+          const links = '<a class="list-group-item list-group-item-action" href="#">Company Registration</a> <a class="list-group-item list-group-item-action" href="./private.html">Private Limited Company</a> <a class="list-group-item list-group-item-action" href="./limited-liability.html">Limited Liability Partnership</a> <a class="list-group-item list-group-item-action" href="./one-person.html">One Person Company</a> <a class="list-group-item list-group-item-action" href="./sole.html">Sole Proprietorship</a> <a class="list-group-item list-group-item-action" href="./nidhi.html">Nidhi Company</a> <a class="list-group-item list-group-item-action" href="./patnership.html">Partnership Firm</a> <a class="list-group-item list-group-item-action" href="./startup.html">Startup India Registration</a>';
+          document.getElementById("bussinessSetuplistItems").innerHTML = links;
+          function getListItems(event) {
+              const id = event.target.id;
+              if (id === "companyRegistration") {
+                  const links = '<a class="list-group-item list-group-item-action" href="#">Company Registration</a> <a class="list-group-item list-group-item-action" href="./private.html">Private Limited Company</a> <a class="list-group-item list-group-item-action" href="./limited-liability.html">Limited Liability Partnership</a> <a class="list-group-item list-group-item-action" href="./one-person.html">One Person Company</a> <a class="list-group-item list-group-item-action" href="./sole.html">Sole Proprietorship</a> <a class="list-group-item list-group-item-action" href="./nidhi.html">Nidhi Company</a> <a class="list-group-item list-group-item-action" href="./patnership.html">Partnership Firm</a> <a class="list-group-item list-group-item-action" href="./startup.html">Startup India Registration</a>';
+                  document.getElementById("bussinessSetuplistItems").innerHTML = links;
+              }
+  
+              if (id === "internationalBusinessSetup") {
+                  const links = '<a class="list-group-item list-group-item-action" href="#">International Business Setup</a> <a class="list-group-item list-group-item-action" href="./us.html">US Incorporation</a> <a class="list-group-item list-group-item-action" href="./dubai.html">Dubai Company Incorporation</a>';
+                  document.getElementById("bussinessSetuplistItems").innerHTML = links;
+              }
+  
+              if (id === "licences&Registration") {
+                  const links = '<a class="list-group-item list-group-item-action" href="#">Licenses & Registrations</a> <a class="list-group-item list-group-item-action" href="./udyam.html">Udyam/MSME Registration</a> <a class="list-group-item list-group-item-action" href="./iso.html">ISO Certification</a> <a class="list-group-item list-group-item-action" href="./fssai.html">FSSAI [Food License]</a> <a class="list-group-item list-group-item-action" href="./iec.html">IEC [Import/Export Code]</a>';
+                  document.getElementById("bussinessSetuplistItems").innerHTML = links;
+              }
+  
+              if (id === "webDevelopment") {
+                  const links = '<a class="list-group-item list-group-item-action" href="#">Web Development</a> <a class="list-group-item list-group-item-action" href="./web.html">Web/E-Commerce Website Development</a>';
+                  document.getElementById("bussinessSetuplistItems").innerHTML = links;
+              }
+          }
+  
+          var menu = document.querySelector(".mega-menu-business-setup");
+          menu.style.display === "static";
+          function displayMenuItem(event) {
+              var menu = document.querySelector(".mega-menu-business-setup");
+              menu.style.display === "static";
+          }
+      </script>
+  
+  
+      <script>
+          const taxLinks = '<a class="list-group-item list-group-item-action" href="#">GST and Other Indirect Tax</a> <a class="list-group-item list-group-item-action" href="./gst.html">GST Registration</a> <a class="list-group-item list-group-item-action" href="./gst-filling.html">GST Filing</a> <a class="list-group-item list-group-item-action" href="./gst-revocation.html">GST Cancellation and Revocation</a>';
+          document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+          function getListItemsTax(event) {
+              const id = event.target.id;
+              if (id === "gstandOtherIndirectTax") {
+                  const taxLinks = '<a class="list-group-item list-group-item-action" href="#">GST and Other Indirect Tax</a> <a class="list-group-item list-group-item-action" href="./gst.html">GST Registration</a> <a class="list-group-item list-group-item-action" href="./gst-filling.html">GST Filing</a> <a class="list-group-item list-group-item-action" href="./gst-revocation.html">GST Cancellation and Revocation</a>';
+                  document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+              }
+  
+              if (id === "changesinPvtLtdCompany") {
+                  const taxLinks = '<a class="list-group-item list-group-item-action" href="#">Changes in Pvt Ltd Company</a> <a class="list-group-item list-group-item-action" href="#">Add a Director</a> <a class="list-group-item list-group-item-action" href="#">Remove a Director</a> <a class="list-group-item list-group-item-action" href="#">Increase Authorized Capital</a> <a class="list-group-item list-group-item-action" href="#">Close the Pvt Ltd Company</a> <a class="list-group-item list-group-item-action" href="#">Strike off Company</a> <a class="list-group-item list-group-item-action" href="#">Change Objective/Activity</a> <a class="list-group-item list-group-item-action" href="#">Change Address</a>';
+                  document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+              }
+  
+              if (id === "changesinLimitedLiabilityPartnership") {
+                  const taxLinks = '<a class="list-group-item list-group-item-action" href="#">Changes In Limited Liability Partnership</a> <a class="list-group-item list-group-item-action" href="#">Add Designated Partner</a> <a class="list-group-item list-group-item-action" href="#">Changes to LLP Agreement</a> <a class="list-group-item list-group-item-action" href="#">Close the LLP</a>';
+                  document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+              }
+  
+              if (id === "mandatoryAnnualFilings") {
+                  const taxLinks = '<a class="list-group-item list-group-item-action" href="#">Mandatory Annual Filings</a> <a class="list-group-item list-group-item-action" href="./annual-compliance.html">Annual Compliance Services</a> <a class="list-group-item list-group-item-action" href="./llp-annual-filling.html">LLP Annual Filings</a> <a class="list-group-item list-group-item-action" href="./secretarial-audit.html">Secretarial Audit</a>';
+                  document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+              }
+  
+              if (id === "labourCompliance") {
+                  const taxLinks = '<a class="list-group-item list-group-item-action" href="#">Labour Compliance</a> <a class="list-group-item list-group-item-action" href="./pf-registration.html">Provident Fund (PF) Registration</a> <a class="list-group-item list-group-item-action" href="./esi-registration.html">ESI Registration</a> <a class="list-group-item list-group-item-action" href="./pt-registration.html">Professional Tax Registration</a><a class="list-group-item list-group-item-action" href="./labour.html">Labour Licence</a> <a class="list-group-item list-group-item-action" href="#">GHMC Trade Licence</a>';
+                  document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+              }
+  
+              if (id === "accounting&Tax") {
+                  const taxLinks = '<a class="list-group-item list-group-item-action" href="#">Accounting & Tax</a> <a class="list-group-item list-group-item-action" href="#">Accounting and Book-keeping</a> <a class="list-group-item list-group-item-action" href="#">TDS Return Filing</a> <a class="list-group-item list-group-item-action" href="./itr.html">Individual Income Tax Filing</a> <a class="list-group-item list-group-item-action" href="./itr-filling-sole.html">Proprietorship Tax Return Filing</a> <a class="list-group-item list-group-item-action" href="./itr-llp.html">ITR for LLP</a> <a class="list-group-item list-group-item-action" href="#">Corporate Tax</a> <a class="list-group-item list-group-item-action" href="./ita.html">Income Tax Assessment</a> <a class="list-group-item list-group-item-action" href="./itn-response.html">Income Tax Notice</a>';
+                  document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+              }
+          }
+  
+          var menu = document.querySelector(".mega-menu-tax-compliance");
+          menu.style.display === "static";
+          function displayMenuItemTax(event) {
+              var menu = document.querySelector(".mega-menu-tax-compliance");
+              menu.style.display === "static";
+          }
+      </script>
+  
+      <script>
+          const trademarkLinks = '<a class="list-group-item list-group-item-action" href="#">Trademark</a> <a class="list-group-item list-group-item-action" href="./trademark.html">Trademark Registration</a>';
+          document.getElementById("trademark&IpListItems").innerHTML = trademarkLinks;
+          function getListItemsTrademark(event) {
+              const id = event.target.id;
+              if (id === "tradeMark") {
+                  const trademarkLinks = '<a class="list-group-item list-group-item-action" href="#">Trademark</a> <a class="list-group-item list-group-item-action" href="./trademark.html">Trademark Registration</a>';
+                  document.getElementById("trademark&IpListItems").innerHTML = trademarkLinks;
+              }
+  
+              if (id === "copyRight") {
+                  const trademarkLinks = '<a class="list-group-item list-group-item-action" href="#">Copyright</a> <a class="list-group-item list-group-item-action" href="#">Copyright Registration</a> <a class="list-group-item list-group-item-action" href="#">Copyright Music</a>';
+                  document.getElementById("trademark&IpListItems").innerHTML = trademarkLinks;
+              }
+  
+          }
+  
+          var menu = document.querySelector(".mega-menu-trademark-ip");
+          menu.style.display === "static";
+          function displayMenuItemTrademark(event) {
+              var menu = document.querySelector(".mega-menu-trademark-ip");
+              menu.style.display === "static";
+          }
+      </script>
+  
+      <script>
+      const othersLinks = '<a class="list-group-item list-group-item-action" href="#">NGO Registration</a> <a class="list-group-item list-group-item-action" href="./ngo-registration.html">NGO</a> <a class="list-group-item list-group-item-action" href="./section-company-registration.html">Section 8 Company</a> <a class="list-group-item list-group-item-action" href="./trust-registration.html">Trust Registration</a> <a class="list-group-item list-group-item-action" href="./online-society.html">Society Registration</a> <a class="list-group-item list-group-item-action bold" href="#">NGO Compliance</a> <a class="list-group-item list-group-item-action" href="./ngo-compliance.html">NGO Compliance</a> <a class="list-group-item list-group-item-action" href="./section8-company-compliance.html">Section 8 Compliance</a> <a class="list-group-item list-group-item-action" href="./csr-1-registration.html">CSR-1 Filing</a> <a class="list-group-item list-group-item-action" href="./section-80G-12A-registration.html">Sec. 80G & Sec. 12A</a> <a class="list-group-item list-group-item-action" href="./darphan-registration.html">Darpan Registration</a> <a class="list-group-item list-group-item-action" href="./fcra-registration.html">FCRA Registration</a>';
+      document.getElementById("othersListItems").innerHTML = othersLinks;
+      function getListItemsOthers(event) {
+          const id = event.target.id;
+          if (id === "ngo") {
+              const othersLinks = '<a class="list-group-item list-group-item-action" href="#">NGO Registration</a> <a class="list-group-item list-group-item-action" href="./ngo-registration.html">NGO</a> <a class="list-group-item list-group-item-action" href="./section-company-registration.html">Section 8 Company</a> <a class="list-group-item list-group-item-action" href="./trust-registration.html">Trust Registration</a> <a class="list-group-item list-group-item-action" href="./online-society.html">Society Registration</a> <a class="list-group-item list-group-item-action bold" href="#">NGO Compliance</a> <a class="list-group-item list-group-item-action" href="./ngo-compliance.html">NGO Compliance</a> <a class="list-group-item list-group-item-action" href="./section8-company-compliance.html">Section 8 Compliance</a> <a class="list-group-item list-group-item-action" href="./csr-1-registration.html">CSR-1 Filing</a> <a class="list-group-item list-group-item-action" href="./section-80G-12A-registration.html">Sec. 80G & Sec. 12A</a> <a class="list-group-item list-group-item-action" href="./darphan-registration.html">Darpan Registration</a> <a class="list-group-item list-group-item-action" href="./fcra-registration.html">FCRA Registration</a>';
+              document.getElementById("othersListItems").innerHTML = othersLinks;
+          }
+  
+          if (id === "fullyFledgeMoneyChangesLicence") {
+              const othersLinks = '<a class="list-group-item list-group-item-action" href="./ffmc.html"> Fully Fledge Money Changes Licence</a>';
+              document.getElementById("othersListItems").innerHTML = othersLinks;
+          }
+  
+  
+          if (id === "ca/Cs") {
+              const othersLinks = '<a class="list-group-item list-group-item-action" href="#">CA/CS</a> <a class="list-group-item list-group-item-action" href="./net-worth.html">Net Worth Certificate for VISA</a> <a class="list-group-item list-group-item-action" href="./property-valuation.html">Property Valuation Certificate</a> <a class="list-group-item list-group-item-action" href="./f&o-tax-audit.html">Future & Options (F&O) Tax Audit</a> <a class="list-group-item list-group-item-action" href="./cma.html">Project Report/(CMA) </a>';
+              document.getElementById("othersListItems").innerHTML = othersLinks;
+          }
+  
+  
+          if (id === "rera") {
+              const othersLinks = '<a class="list-group-item list-group-item-action" href="./rera.html">RERA</a>';
+              document.getElementById("othersListItems").innerHTML = othersLinks;
+          }
+  
+      }
+  
+      var menu = document.querySelector(".mega-menu-others");
+      menu.style.display === "static";
+      function displayMenuItemOthers(event) {
+          var menu = document.querySelector(".mega-menu-others");
+          menu.style.display === "static";
+      }
+      </script>
+  
+      <script>
+      // const resourcesLinks = '<a class="list-group-item list-group-item-action" href="#">Taxation</a> <a class="list-group-item list-group-item-action" href="./ngo-registration.html">NGO</a> <a class="list-group-item list-group-item-action" href="./section-company-registration.html">Section 8 Company</a> <a class="list-group-item list-group-item-action" href="./trust-registration.html">Trust Registration</a> <a class="list-group-item list-group-item-action" href="./online-society.html">Society Registration</a>';
+      document.getElementById("resourcesListItems").innerHTML = resourcesLinks;
+      function getListItemsResources(event) {
+          const id = event.target.id;
+          if (id === "taxation") {
+              const resourcesLinks = '<a class="list-group-item list-group-item-action" href="#">Taxation</a> <a class="list-group-item list-group-item-action" href="./taxation.html">Taxation</a>';
+              document.getElementById("resourcesListItems").innerHTML = resourcesLinks;
+          }
+  
+          if (id === "accounting") {
+              const resourcesLinks = '<a class="list-group-item list-group-item-action" href="#">Accounting</a> <a class="list-group-item list-group-item-action" href="./accounting.html">Accounting</a>';
+              document.getElementById("resourcesListItems").innerHTML = resourcesLinks;
+          }
+  
+  
+          if (id === "businessConsulting") {
+              const resourcesLinks = '<a class="list-group-item list-group-item-action" href="#">Business Consulting</a> <a class="list-group-item list-group-item-action" href="./consulting.html">Business Consulting</a>';
+              document.getElementById("resourcesListItems").innerHTML = resourcesLinks;
+          }
+  
+      }
+  
+      var menu = document.querySelector(".mega-menu-resources");
+      menu.style.display === "static";
+      function displayMenuItemResources(event) {
+          var menu = document.querySelector(".mega-menu-resources");
+          menu.style.display === "static";
+      }
+      </script>
+
+<script>
+    // const barsLinks = '<a class="list-group-item list-group-item-action" href="#">Taxation</a> <a class="list-group-item list-group-item-action" href="./ngo-registration.html">NGO</a> <a class="list-group-item list-group-item-action" href="./section-company-registration.html">Section 8 Company</a> <a class="list-group-item list-group-item-action" href="./trust-registration.html">Trust Registration</a> <a class="list-group-item list-group-item-action" href="./online-society.html">Society Registration</a>';
+    document.getElementById("barsListItems").innerHTML = barsLinks;
+    function getListItemsBars(event) {
+        const id = event.target.id;
+        if (id === "patnerWithUs") {
+            const barsLinks = '<a class="list-group-item list-group-item-action" href="#">Patner With Us</a> <a class="list-group-item list-group-item-action" href="./patnerwithus.html">Patner With Us</a>';
+            document.getElementById("barsListItems").innerHTML = barsLinks;
+        }
+
+        if (id === "talktoaExpert") {
+            const barsLinks = '<a class="list-group-item list-group-item-action" href="#">Talk to a Expert</a> <a class="list-group-item list-group-item-action" href="./talk.html">Talk to a Expert</a>';
+            document.getElementById("barsListItems").innerHTML = barsLinks;
+        }
+
+
+    }
+
+    var menu = document.querySelector(".mega-menu-bars");
+    menu.style.display === "static";
+    function displayMenuItemBars(event) {
+        var menu = document.querySelector(".mega-menu-bars");
+        menu.style.display === "static";
+    }
+    </script>
+
+
+</body>
+
+</html>
