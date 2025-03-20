@@ -1,0 +1,301 @@
+.text-green {
+  color: #119083;
+}
+
+.back-green {
+  background-color: #119083;
+}
+
+.nav-item {
+  padding: 0.5rem 0xp;
+}
+
+/* .dropdown-hover:hover>.dropdown-menu {
+display: inline-block;
+} */
+
+.dropdown-hover>.dropdown-toggle:active {
+  /* Without this, clicking will make it sticky */
+  pointer-events: none;
+}
+
+.hoverlinks a:hover {
+  color: #119083;
+}
+
+.blog-img1{
+  background-image: url(./images/image_1.jpg.webp);
+  height: 250px;
+  width: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+}
+
+.blog-img2{
+    background-image: url(./images/image_2.jpg.webp);
+    height: 250px;
+    width: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+  }
+
+.blog-img3{
+    background-image: url(./images/image_3.jpg.webp);
+    height: 250px;
+    width: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center; 
+    position: relative;
+  }
+
+  .blog-img4{
+    background-image: url(./images/image_1.jpg.webp);
+    height: 250px;
+    width: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+  }
+
+  .blog-img5{
+    background-image: url(./images/image_1.jpg.webp);
+    height: 250px;
+    width: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+  }
+
+.blog1-img:hover,.blog2-img:hover,.blog3-img:hover,.blog4-img:hover,.blog5-img:hover {
+    cursor: pointer;
+}
+.overflow-relative{
+  position: relative;
+  height: 100%;
+  width: 350px;
+}
+.img-border{
+    position: relative;
+    /* height: 250px; */
+    width: 350px;
+}
+
+.overflow-absolute{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 0%;
+  transition: .3s ease;
+  background-color: #119083;
+  overflow: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+.overflow-relative-2{
+  position: relative;
+  height: 100%;
+  width: 350px;
+}
+
+.overflow-absolute-2{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 0%;
+  transition: .3s ease;
+  background-color: #119083;
+  overflow: scroll;
+}
+
+.overflow-relative-3{
+  position: relative;
+  height: 100%;
+  width: 350px;
+}
+
+.overflow-absolute-3{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 0%;
+  transition: .3s ease;
+  background-color: #119083;
+  overflow: scroll;
+}
+
+.overflow-relative-4{
+  position: relative;
+  height: 100%;
+  width: 350px;
+}
+
+.overflow-absolute-4{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 0%;
+  transition: .3s ease;
+  background-color: #119083;
+  overflow: scroll;
+}
+
+.overflow-relative-5{
+  position: relative;
+  height: 100%;
+  width: 350px;
+}
+
+.overflow-absolute-5{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 0%;
+  transition: .3s ease;
+  background-color: #119083;
+  overflow: scroll;
+}
+
+
+.blog-img1::before,
+.blog-img1::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 100px;
+  }
+  .blog-img1::before {
+    top: 0px;
+    left: 0px;
+    border-top: 6px solid  #119083;
+    border-left: 6px solid  #119083;
+  }
+
+  .blog-img1::after {
+    bottom: 0px;
+    right: 0px;
+    border-bottom: 6px solid #119083;
+    border-right: 6px solid  #119083;
+}
+
+.blog-img2::before,
+.blog-img2::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+  .blog-img2::before {
+    top: 0;
+    left: 0;
+    border-top: 6px solid  #119083;
+    border-left: 6px solid  #119083;
+  }
+
+  .blog-img2::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 6px solid #119083;
+    border-right: 6px solid  #119083;
+}
+
+.blog-img3::before,
+.blog-img3::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+  .blog-img3::before {
+    top: 0;
+    left: 0;
+    border-top: 6px solid  #119083;
+    border-left: 6px solid  #119083;
+  }
+
+  .blog-img3::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 6px solid #119083;
+    border-right: 6px solid  #119083;
+}
+
+.blog-img4::before,
+.blog-img4::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+  .blog-img4::before {
+    top: 0;
+    left: 0;
+    border-top: 6px solid  #119083;
+    border-left: 6px solid  #119083;
+  }
+
+  .blog-img4::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 6px solid #119083;
+    border-right: 6px solid  #119083;
+}
+
+.blog-img5::before,
+.blog-img5::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+  .blog-img5::before {
+    top: 0;
+    left: 0;
+    border-top: 6px solid  #119083;
+    border-left: 6px solid  #119083;
+  }
+
+  .blog-img5::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 6px solid #119083;
+    border-right: 6px solid  #119083;
+}
+
+
+
+
+button{
+    height: 40px;
+    width: 120px;
+    font-size: 15px;
+    border: none;
+    background-color: #119083;
+    color: white;
+    border: 1px solid;
+    border-radius: 30px;
+   
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #119083; 
+    border: 1px solid; 
+    border-radius: 20px;
+    border-color: #119083;
+    transition: .3s ease;
+}
+
+
+

@@ -1,0 +1,35 @@
+.text-green {
+  color: #119083;
+}
+
+.back-green {
+  background-color: #119083;
+}
+
+.nav-item {
+  padding: 0.5rem 0xp;
+}
+
+/* .dropdown-hover:hover>.dropdown-menu {
+display: inline-block;
+} */
+
+.dropdown-hover>.dropdown-toggle:active {
+  /* Without this, clicking will make it sticky */
+  pointer-events: none;
+}
+
+.hoverlinks a:hover {
+  color: #119083;
+}
+
+
+  .bgimg{
+    background-image: url("https://template.creativemox.com/taxplan/wp-content/uploads/sites/24/2024/06/BG-header.png");
+    height: 750px;
+    width: 100%;
+    /* background-color: #0E1422; */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;   
+}
