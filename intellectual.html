@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk to Intellectual Property Lawyer</title>
+    <link rel="stylesheet" href="./css/intellectual.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <!-- <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" /> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./static/css/mdb.min.css"/>
+
+    <style>
+       
+        .mega-menu-left-list-items p,
+        .mega-menu-right-list-items a {
+            border: none;
+        }
+
+        .mega-menu {
+            background-color: #f7f7f7;
+            max-height: 500px;
+            overflow: scroll;
+            /* overflow-x: hidden; */
+        }
+
+        .mega-menu-left-list-items p:hover {
+            background-color: #ffff;
+            color: #119083;
+            cursor: pointer;
+        }
+
+        .mega-menu-right-list-items a:nth-child(1),.bold {
+            font-size: 18px;
+            font-weight: bold;
+            width: max-content;
+            /* border-bottom: solid 1px #007bff; */
+            /* padding-left: 0px; */
+        }
+
+        .mega-menu-right-list-items a:hover {
+            color: #119083;
+            background-color: #f7f7f7;
+        }
+
+        .mega-menu {
+            width: 52%;
+        }
+
+        @media (max-width: 992px) {
+            .mega-menu {
+                width: 100%;
+            }
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 2px;
+        }
+
+      
+    </style>
+
+</head>
+ 
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            
+            <a class="me-auto" href="./index.html">
+                <img src="./css/images/new logo.png" alt="Scalexcel Logo" style="width: 200px;" />   
+            </a>
+        
+            <button data-mdb-button-init class="float-end navbar-toggler px-0" type="button" data-mdb-collapse-init
+                data-mdb-target="#navbarExample2" aria-controls="navbarExample2" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarExample2">
+                <!-- Left links -->
+                <ul class="navbar-nav ms-auto ps-lg-0" style="padding-left: 0.15rem">
+                    <!-- Navbar dropdown -->
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Business Setup
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-business-setup"
+                            aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="companyRegistration" onclick="displayMenuItem(event)"
+                                                onmouseover="getListItems(event);"><i class="far fa-building"></i>
+                                                Company Registration <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="internationalBusinessSetup" onmouseover="getListItems(event);">
+                                                <i class="far fa-building"></i>
+                                                International Business Setup <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="licences&Registration" onmouseover="getListItems(event);">
+                                                <i class="far fa-building"></i>
+                                                Licenses & Registrations <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3" id="webDevelopment"
+                                                onmouseover="getListItems(event);"><i class="far fa-building"></i>
+                                                Web Development <i class="float-end pt-1 fas fa-angle-right"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="bussinessSetuplistItems">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Tax & Compliance
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-tax-compliance"
+                            aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="gstandOtherIndirectTax" onclick="displayMenuItemTax(event)"
+                                                onmouseover="getListItemsTax(event);"><i class="far fa-building"></i>
+                                                GST and Other Indirect Tax <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="changesinPvtLtdCompany" onmouseover="getListItemsTax(event);">
+                                                <i class="far fa-building"></i>
+                                                Changes in Pvt Ltd Company <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="changesinLimitedLiabilityPartnership"
+                                                onmouseover="getListItemsTax(event);"><i class="far fa-building"></i>
+                                                Changes In Limited Liability Partnership <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="mandatoryAnnualFilings" onmouseover="getListItemsTax(event);">
+                                                <i class="far fa-building"></i>
+                                                Mandatory Annual Filings <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3" id="labourCompliance"
+                                                onmouseover="getListItemsTax(event);"><i class="far fa-building"></i>
+                                                Labour Compliance <i class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3" id="accounting&Tax"
+                                                onmouseover="getListItemsTax(event);"><i class="far fa-building"></i>
+                                                Accounting & Tax <i class="float-end pt-1 fas fa-angle-right"></i></p>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="tax&ComplianceListItems">
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Trademark & IP
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-trademark-ip"
+                            aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="tradeMark" onclick="displayMenuItemTrademark(event)"
+                                                onmouseover="getListItemsTrademark(event);"><i
+                                                    class="far fa-building"></i>
+                                                Trademark <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3" id="copyRight"
+                                                onmouseover="getListItemsTrademark(event);"><i class="far fa-building"></i>
+                                                Copyright <i class="float-end pt-1 fas fa-angle-right"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="trademark&IpListItems">
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Others
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-others" aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="ngo" onclick="displayMenuItemOthers(event)"
+                                                onmouseover="getListItemsOthers(event);"><i class="far fa-building"></i>
+                                                NGO <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="fullyFledgeMoneyChangesLicence" onmouseover="getListItemsOthers(event);">
+                                                <i class="far fa-building"></i>
+                                                Fully Fledge Money Changes Licence <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="ca/Cs" onclick="displayMenuItemOthers(event)"
+                                                onmouseover="getListItemsOthers(event);"><i class="far fa-building"></i>
+                                                CA/CS <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                            id="rera" onclick="displayMenuItemOthers(event)"
+                                            onmouseover="getListItemsOthers(event);"><i class="far fa-building"></i>
+                                            RERA <i class="float-end pt-1 fas fa-angle-right"></i>
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="othersListItems">
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-resources" aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="taxation" onclick="displayMenuItemResources(event)"
+                                                onmouseover="getListItemsResources(event);"><i class="far fa-building"></i>
+                                                Taxation <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="accounting" onclick="displayMenuItemResources(event)"
+                                                onmouseover="getListItemsResources(event);">
+                                                <i class="far fa-building"></i>
+                                                Accounting <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="businessConsulting" onclick="displayMenuItemResources(event)"
+                                                onmouseover="getListItemsResources(event);"><i class="far fa-building"></i>
+                                                Business Consulting <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="resourcesListItems">
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <a class="nav-link fw-bold" href="./blog.html" id="navbarDropdown"
+                    role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                    Blog
+                    </a>
+
+                    <li class="nav-item dropdown position-static">
+                        <a data-mdb-dropdown-init class="nav-link fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu mega-menu mt-0 mega-menu-bars" aria-labelledby="navbarDropdown"
+                            style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                            <div class="container">
+                                <div class="row my-4">
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="mega-menu-left-list-items list-group list-group-flush">
+                                            <p class="list-group-item list-group-item-action py-3 me-auto"
+                                                id="patnerWithUs" onclick="displayMenuItemBars(event)"
+                                                onmouseover="getListItemsBars(event);"><i class="far fa-building"></i>
+                                                Patner With Us <i class="float-end pt-1 fas fa-angle-right"></i>
+                                            </p>
+                                            <p class="list-group-item list-group-item-action py-3"
+                                                id="talktoaExpert" onclick="displayMenuItemBars(event)"
+                                                onmouseover="getListItemsBars(event);">
+                                                <i class="far fa-building"></i>
+                                                Talk to a Expert <i
+                                                    class="float-end pt-1 fas fa-angle-right"></i></p>
+                                          
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                                        <div class="list-group mega-menu-right-list-items list-group-flush"
+                                            id="barsListItems">
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-7">
+                <h1 class="fw-bold">Intellectual Property Lawyers in India</h1>
+                <div class="d-lg-flex pt-2">
+                    <i class="fa fa-circle-check text-green pt-2 pe-2"></i>
+                    <p class="fs-5">Expert IP lawyers assist you get your trademark, Patent, Copyright or Design registered
+                    </p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check text-green pt-2 pe-2"></i>
+                    <p class="fs-5">Guided assistance via chat throughout the process</p>
+                </div>
+                <div class="d-lg-flex">
+                    <i class="fa fa-circle-check text-green pt-2 pe-2"></i>
+                    <p class="fs-5">Get a lawyer call back in less than 24 hours</p>
+                </div>
+                <div class="row row-cols-lg-4 mt-4">
+                    <div class="text-center">
+                        <img src="https://assets.vakilsearch.com/live-images/talk-to-expert/form.svg" class=" border p-2 rounded-3" height="50" width="50">
+                        <h6 class="mt-4 fw-bold">Fill the Form</h6>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://assets.vakilsearch.com/live-images/talk-to-expert/calendar.svg" class=" border p-2 rounded-3" height="50" width="50">
+                        <h6 class="mt-4 fw-bold">Schedule an Appointment</h6>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://assets.vakilsearch.com/live-images/talk-to-expert/payment.svg" class=" border p-2 rounded-3" height="50" width="50">
+                        <h6 class="mt-4 fw-bold">Make Payment</h6>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://assets.vakilsearch.com/live-images/talk-to-expert/phone.svg" class=" border p-2 rounded-3" height="50" width="50">
+                        <h6 class="mt-4 fw-bold">Talk to a IP lawyer</h6>
+                    </div>
+                    
+                </div>
+        
+            </div>
+
+            <div class="col-lg-4 ms-5 shadow-lg rounded-2 position-relative bg-warning-subtle">
+                <div class="position-absolute top-0 start-0 translate-start">
+                    <img src="./css/images/img.png" height="45" width="200">
+                </div>
+                <form>
+                    <h3 class="text-center mt-5 pt-2">Get Started!</h3>
+                    <div class="mb-1">
+                        <label class="form-label fw-semibold ps-1">Email</label>
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                    </div>
+
+                    <div class="mb-1">
+                        <label for="mobile" class="col-form-label fw-semibold ps-1">Mobile No</label>
+                        <input type="text" class="form-control" id="mobile" placeholder="Mobile No" required>
+                    </div>
+
+                    <div class="mb-1">
+                        <label for="city" class="col-form-label fw-semibold ps-1">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="City">
+                    </div>
+                    <div class="d-lg-flex justify-content-center mt-4 mb-3">
+                        <button type="submit"
+                            class="px-5 py-2 text-white back-green border-0 rounded-3 fw-bold fs-6">Get Started</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container mt-5">
+        <h2 class="fw-bold pb-3 mt-5 text-center">Areas of Expertise</h2>
+        <p>Trademark, Copyright, patent, or design objections can arise due to various reasons, such as ownership issues, lack of novelty, similar IP in existence and functional aspects. Our IP lawyers offer a comprehensive solution to address these objections curating responses specific to your case. We conduct thorough research to identify the reasons for the objection and provide an appropriate solution.</p>
+        
+        
+        <h6 class="fw-bold mt-4">Trademark Objection Services:</h6>
+        <p>1. Trademark search and analysis</p>
+        <p>2. Responding to trademark objection/ examination reports</p>
+        <p>3. Drafting and filing responses to objections raised by the trademark office</p>
+        <p>4. Negotiating with the trademark office or other parties to overcome objections</p>
+        <p>5. Filing amendments and providing advisory as to the best way to overcome objections.</p>
+        
+        
+        <h6 class="fw-bold mt-4">Copyright Objection Services:</h6>
+        <p>1. Copyright discrepancy clearance</p>
+        <p>2. Responding to copyright objections/examination reports/discrepancy letters</p>
+        <p>3. Drafting and filing responses to objections raised by the copyright office or third parties</p>
+        <p>4. Negotiating with the trademark office or other parties to overcome objections</p>
+
+
+        <h6 class="fw-bold mt-4">Patent Objection Services:</h6>
+        <p>1. Responding to patent office first examination report</p>
+        <p>2. Drafting and filing responses to objections raised by the patent office or third parties</p>
+        <p>3. Negotiating with the patent office or other parties to overcome objections</p>
+        <p>4. Drafting and filing amendments to the patent specification in order to overcome the objections.</p>
+        
+       
+        <h6 class="fw-bold mt-4">Design Objection Services:</h6>
+        <p>1. Design search and analysis</p>
+        <p>2. Responding to design office actions</p>
+        <p>3. Drafting and filing responses to objections raised by the design office or third parties</p>
+        <p>4. Negotiating with the design office or other parties to overcome objections.</p>
+
+
+
+
+
+
+
+
+        <h1 class="fw-bold pb-3 mt-5 text-center">Why Vakilsearch?</h1>
+
+        <div class="row justify-content-center mt-5">
+            <div class="p-2 col">
+                <div class="bg-warning-subtle rounded-5 text-center p-3">
+                    <img src="https://assets.vakilsearch.com/live-images/talk-to-expert/computer.svg">
+                    <h3 class="pt-3 fw-bold">Completely Online</h3>
+                    <p class="pt-3">Our team of advisors will provide you with sound advice based on your needs. The entire procedure is very smooth and worry free.</p>
+                </div>
+            </div>
+
+            <div class="p-2 col">
+                <div class="bg-warning-subtle rounded-5 text-center p-4">
+                    <img src="https://assets.vakilsearch.com/live-images/talk-to-expert/meet.svg">
+                    <h3 class="pt-3 fw-bold">Video Call</h3>
+                    <p class="pt-2">We provide quick fixes to busy clients through video calls. While maintaining their privacy over the phone or via email.</p>
+                </div>
+            </div>
+
+            <div class="p-2 col">
+                <div class="bg-warning-subtle rounded-5 text-center p-4">
+                    <img src="https://assets.vakilsearch.com/live-images/talk-to-expert/money.svg">
+                    <h3 class="pt-3 fw-bold">Save Money</h3>
+                    <p class="pt-2">No extra fees will be charged. Change lawyers quickly without having to pay more. While saving money, get excellent guidance</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="fw-bold pb-3 mt-5 text-center">Scholarly Work by Our Panel of Consultants</h2>
+        <div class="row justify-content-center m-lg-3 bg-body-secondary">
+            <div class="p-lg-2 col">
+                <div class="bg-white rounded-1 p-lg-4">
+                    <p>Prakash from Vakilsearch ensured seamless compliance handling for
+                        Kartisoft. Highly recommend their reliable services and expert support.
+                    </p>
+                    <div class="d-lg-flex">
+                        <div class="circle">
+                            <img src="https://template.creativemox.com/taxplan/wp-content/uploads/sites/24/2024/06/img__02-300x300.jpg"
+                                height="auto" width="100%">
+                        </div>
+                        <h5 class="fw-bold ps-lg-3 pt-lg-3 text-green">Sandeep Sangam</h5>
+                        <i class="fa-solid fa-quote-right ms-lg-4 mt-lg-3 fs-1 text-green"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-lg-2 col">
+                <div class="bg-white rounded-1 p-lg-4">
+                    <p>Prakash from Vakilsearch ensured seamless compliance handling for
+                        Kartisoft. Highly recommend their reliable services and expert support.
+                    </p>
+                    <div class="d-lg-flex">
+                        <div class="circle">
+                            <img src="https://template.creativemox.com/taxplan/wp-content/uploads/sites/24/2024/06/img__02-300x300.jpg"
+                                height="auto" width="100%">
+                        </div>
+                        <h5 class="fw-bold ps-lg-3 pt-lg-3 text-green">Sandeep Sangam</h5>
+                        <i class="fa-solid fa-quote-right ms-lg-4 mt-lg-3 fs-1 text-green"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-lg-2 col">
+                <div class="bg-white rounded-1 p-lg-4">
+                    <p>Prakash from Vakilsearch ensured seamless compliance handling for
+                        Kartisoft. Highly recommend their reliable services and expert support.
+                    </p>
+                    <div class="d-lg-flex">
+                        <div class="circle">
+                            <img src="https://template.creativemox.com/taxplan/wp-content/uploads/sites/24/2024/06/img__02-300x300.jpg"
+                                height="auto" width="100%">
+                        </div>
+                        <h5 class="fw-bold ps-lg-3 pt-lg-3 text-green">Sandeep Sangam</h5>
+                        <i class="fa-solid fa-quote-right ms-lg-4 mt-lg-3 fs-1 text-green"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+   
+
+    <div class="box15-footer back-green mt-5">
+        <div class="container pt-5 pb-4">
+            <div class="row row-cols-lg-3">
+                <div class="text-white ps-5 pe-5">
+                    <h3>CORPORATE AND LEGAL SOLUTIONS</h3>
+                    <div class="line"></div>
+                    <p class="pt-4">Goods and Service Taxes</p>
+                    <p>Company Registration</p>
+                    <p>Non-governmental organization (NGO)</p>
+                    <p>Intellectual Property (IP)</p>
+
+                    <h4 class="pt-3 pb-2">Follow Us</h4>
+                    <div>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-twitter ps-3"></i>
+                        <i class="fa-brands fa-facebook-f ps-3"></i>
+                        <i class="fa-brands fa-instagram ps-3"></i>
+                        <i class="fa-brands fa-youtube ps-3"></i>
+                    </div>
+                </div>
+
+                <div class="text-white">
+                    <h3>FINANCE AND INVESTMENT CALUCATORS</h1>
+                        <div class="line"></div>
+                        <div>
+                            <p class="pt-4">Gratuity Calculator</p>
+                            <p>Pay Commission of India</p>
+                            <p>Business Setup Calculator</p>
+                            <p>Simple Compound Interest Calculator</p>
+                            <p>Home Loan EMI Calculator</p>
+                            <p>Mutual Fund Returns Calculator</p>
+                            <p>Retirement Planning Calculator</p>
+                        </div>
+
+                </div>
+
+                <div class="text-white">
+                    <h3>BUSINESS AND LEGAL RESOURCES</h1>
+                        <div class="line"></div>
+                        <div>
+                            <p class="pt-4">Consumer Complaint</p>
+                            <p class="pt-2">HSN Code</p>
+                            <p class="pt-2">
+                                Patent Search</p>
+                            <p class="pt-2">
+                                Trademark Search</p>
+                            <p class="pt-2">Company Name Search</p>
+
+                        </div>
+
+                </div>
+            </div>
+            <div class="line2 mt-5"></div>
+            <div class="copyright">
+                <p class="text-white pt-1 text-center">© Copyrights. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="./static/js/mdb.umd.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+
+    <script>
+        const links = '<a class="list-group-item list-group-item-action" href="#">Company Registration</a> <a class="list-group-item list-group-item-action" href="./private.html">Private Limited Company</a> <a class="list-group-item list-group-item-action" href="./limited-liability.html">Limited Liability Partnership</a> <a class="list-group-item list-group-item-action" href="./one-person.html">One Person Company</a> <a class="list-group-item list-group-item-action" href="./sole.html">Sole Proprietorship</a> <a class="list-group-item list-group-item-action" href="./nidhi.html">Nidhi Company</a> <a class="list-group-item list-group-item-action" href="./patnership.html">Partnership Firm</a> <a class="list-group-item list-group-item-action" href="./startup.html">Startup India Registration</a>';
+        document.getElementById("bussinessSetuplistItems").innerHTML = links;
+        function getListItems(event) {
+            const id = event.target.id;
+            if (id === "companyRegistration") {
+                const links = '<a class="list-group-item list-group-item-action" href="#">Company Registration</a> <a class="list-group-item list-group-item-action" href="./private.html">Private Limited Company</a> <a class="list-group-item list-group-item-action" href="./limited-liability.html">Limited Liability Partnership</a> <a class="list-group-item list-group-item-action" href="./one-person.html">One Person Company</a> <a class="list-group-item list-group-item-action" href="./sole.html">Sole Proprietorship</a> <a class="list-group-item list-group-item-action" href="./nidhi.html">Nidhi Company</a> <a class="list-group-item list-group-item-action" href="./patnership.html">Partnership Firm</a> <a class="list-group-item list-group-item-action" href="./startup.html">Startup India Registration</a>';
+                document.getElementById("bussinessSetuplistItems").innerHTML = links;
+            }
+
+            if (id === "internationalBusinessSetup") {
+                const links = '<a class="list-group-item list-group-item-action" href="#">International Business Setup</a> <a class="list-group-item list-group-item-action" href="./us.html">US Incorporation</a> <a class="list-group-item list-group-item-action" href="./dubai.html">Dubai Company Incorporation</a>';
+                document.getElementById("bussinessSetuplistItems").innerHTML = links;
+            }
+
+            if (id === "licences&Registration") {
+                const links = '<a class="list-group-item list-group-item-action" href="#">Licenses & Registrations</a> <a class="list-group-item list-group-item-action" href="./udyam.html">Udyam/MSME Registration</a> <a class="list-group-item list-group-item-action" href="./iso.html">ISO Certification</a> <a class="list-group-item list-group-item-action" href="./fssai.html">FSSAI [Food License]</a> <a class="list-group-item list-group-item-action" href="./iec.html">IEC [Import/Export Code]</a>';
+                document.getElementById("bussinessSetuplistItems").innerHTML = links;
+            }
+
+            if (id === "webDevelopment") {
+                const links = '<a class="list-group-item list-group-item-action" href="#">Web Development</a> <a class="list-group-item list-group-item-action" href="./web.html">Web/E-Commerce Website Development</a>';
+                document.getElementById("bussinessSetuplistItems").innerHTML = links;
+            }
+        }
+
+        var menu = document.querySelector(".mega-menu-business-setup");
+        menu.style.display === "static";
+        function displayMenuItem(event) {
+            var menu = document.querySelector(".mega-menu-business-setup");
+            menu.style.display === "static";
+        }
+    </script>
+
+
+    <script>
+        const taxLinks = '<a class="list-group-item list-group-item-action" href="#">GST and Other Indirect Tax</a> <a class="list-group-item list-group-item-action" href="./gst.html">GST Registration</a> <a class="list-group-item list-group-item-action" href="./gst-filling.html">GST Filing</a> <a class="list-group-item list-group-item-action" href="./gst-revocation.html">GST Cancellation and Revocation</a>';
+        document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+        function getListItemsTax(event) {
+            const id = event.target.id;
+            if (id === "gstandOtherIndirectTax") {
+                const taxLinks = '<a class="list-group-item list-group-item-action" href="#">GST and Other Indirect Tax</a> <a class="list-group-item list-group-item-action" href="./gst.html">GST Registration</a> <a class="list-group-item list-group-item-action" href="./gst-filling.html">GST Filing</a> <a class="list-group-item list-group-item-action" href="./gst-revocation.html">GST Cancellation and Revocation</a>';
+                document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+            }
+
+            if (id === "changesinPvtLtdCompany") {
+                const taxLinks = '<a class="list-group-item list-group-item-action" href="#">Changes in Pvt Ltd Company</a> <a class="list-group-item list-group-item-action" href="#">Add a Director</a> <a class="list-group-item list-group-item-action" href="#">Remove a Director</a> <a class="list-group-item list-group-item-action" href="#">Increase Authorized Capital</a> <a class="list-group-item list-group-item-action" href="#">Close the Pvt Ltd Company</a> <a class="list-group-item list-group-item-action" href="#">Strike off Company</a> <a class="list-group-item list-group-item-action" href="#">Change Objective/Activity</a> <a class="list-group-item list-group-item-action" href="#">Change Address</a>';
+                document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+            }
+
+            if (id === "changesinLimitedLiabilityPartnership") {
+                const taxLinks = '<a class="list-group-item list-group-item-action" href="#">Changes In Limited Liability Partnership</a> <a class="list-group-item list-group-item-action" href="#">Add Designated Partner</a> <a class="list-group-item list-group-item-action" href="#">Changes to LLP Agreement</a> <a class="list-group-item list-group-item-action" href="#">Close the LLP</a>';
+                document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+            }
+
+            if (id === "mandatoryAnnualFilings") {
+                const taxLinks = '<a class="list-group-item list-group-item-action" href="#">Mandatory Annual Filings</a> <a class="list-group-item list-group-item-action" href="./annual-compliance.html">Annual Compliance Services</a> <a class="list-group-item list-group-item-action" href="./llp-annual-filling.html">LLP Annual Filings</a> <a class="list-group-item list-group-item-action" href="./secretarial-audit.html">Secretarial Audit</a>';
+                document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+            }
+
+            if (id === "labourCompliance") {
+                const taxLinks = '<a class="list-group-item list-group-item-action" href="#">Labour Compliance</a> <a class="list-group-item list-group-item-action" href="./pf-registration.html">Provident Fund (PF) Registration</a> <a class="list-group-item list-group-item-action" href="./esi-registration.html">ESI Registration</a> <a class="list-group-item list-group-item-action" href="./pt-registration.html">Professional Tax Registration</a><a class="list-group-item list-group-item-action" href="./labour.html">Labour Licence</a> <a class="list-group-item list-group-item-action" href="#">GHMC Trade Licence</a>';
+                document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+            }
+
+            if (id === "accounting&Tax") {
+                const taxLinks = '<a class="list-group-item list-group-item-action" href="#">Accounting & Tax</a> <a class="list-group-item list-group-item-action" href="#">Accounting and Book-keeping</a> <a class="list-group-item list-group-item-action" href="#">TDS Return Filing</a> <a class="list-group-item list-group-item-action" href="./itr.html">Individual Income Tax Filing</a> <a class="list-group-item list-group-item-action" href="./itr-filling-sole.html">Proprietorship Tax Return Filing</a> <a class="list-group-item list-group-item-action" href="./itr-llp.html">ITR for LLP</a> <a class="list-group-item list-group-item-action" href="#">Corporate Tax</a> <a class="list-group-item list-group-item-action" href="./ita.html">Income Tax Assessment</a> <a class="list-group-item list-group-item-action" href="./itn-response.html">Income Tax Notice</a>';
+                document.getElementById("tax&ComplianceListItems").innerHTML = taxLinks;
+            }
+        }
+
+        var menu = document.querySelector(".mega-menu-tax-compliance");
+        menu.style.display === "static";
+        function displayMenuItemTax(event) {
+            var menu = document.querySelector(".mega-menu-tax-compliance");
+            menu.style.display === "static";
+        }
+    </script>
+
+    <script>
+        const trademarkLinks = '<a class="list-group-item list-group-item-action" href="#">Trademark</a> <a class="list-group-item list-group-item-action" href="./trademark.html">Trademark Registration</a>';
+        document.getElementById("trademark&IpListItems").innerHTML = trademarkLinks;
+        function getListItemsTrademark(event) {
+            const id = event.target.id;
+            if (id === "tradeMark") {
+                const trademarkLinks = '<a class="list-group-item list-group-item-action" href="#">Trademark</a> <a class="list-group-item list-group-item-action" href="./trademark.html">Trademark Registration</a>';
+                document.getElementById("trademark&IpListItems").innerHTML = trademarkLinks;
+            }
+
+            if (id === "copyRight") {
+                const trademarkLinks = '<a class="list-group-item list-group-item-action" href="#">Copyright</a> <a class="list-group-item list-group-item-action" href="#">Copyright Registration</a> <a class="list-group-item list-group-item-action" href="#">Copyright Music</a>';
+                document.getElementById("trademark&IpListItems").innerHTML = trademarkLinks;
+            }
+
+        }
+
+        var menu = document.querySelector(".mega-menu-trademark-ip");
+        menu.style.display === "static";
+        function displayMenuItemTrademark(event) {
+            var menu = document.querySelector(".mega-menu-trademark-ip");
+            menu.style.display === "static";
+        }
+    </script>
+
+    <script>
+    const othersLinks = '<a class="list-group-item list-group-item-action" href="#">NGO Registration</a> <a class="list-group-item list-group-item-action" href="./ngo-registration.html">NGO</a> <a class="list-group-item list-group-item-action" href="./section-company-registration.html">Section 8 Company</a> <a class="list-group-item list-group-item-action" href="./trust-registration.html">Trust Registration</a> <a class="list-group-item list-group-item-action" href="./online-society.html">Society Registration</a> <a class="list-group-item list-group-item-action bold" href="#">NGO Compliance</a> <a class="list-group-item list-group-item-action" href="./ngo-compliance.html">NGO Compliance</a> <a class="list-group-item list-group-item-action" href="./section8-company-compliance.html">Section 8 Compliance</a> <a class="list-group-item list-group-item-action" href="./csr-1-registration.html">CSR-1 Filing</a> <a class="list-group-item list-group-item-action" href="./section-80G-12A-registration.html">Sec. 80G & Sec. 12A</a> <a class="list-group-item list-group-item-action" href="./darphan-registration.html">Darpan Registration</a> <a class="list-group-item list-group-item-action" href="./fcra-registration.html">FCRA Registration</a>';
+    document.getElementById("othersListItems").innerHTML = othersLinks;
+    function getListItemsOthers(event) {
+        const id = event.target.id;
+        if (id === "ngo") {
+            const othersLinks = '<a class="list-group-item list-group-item-action" href="#">NGO Registration</a> <a class="list-group-item list-group-item-action" href="./ngo-registration.html">NGO</a> <a class="list-group-item list-group-item-action" href="./section-company-registration.html">Section 8 Company</a> <a class="list-group-item list-group-item-action" href="./trust-registration.html">Trust Registration</a> <a class="list-group-item list-group-item-action" href="./online-society.html">Society Registration</a> <a class="list-group-item list-group-item-action bold" href="#">NGO Compliance</a> <a class="list-group-item list-group-item-action" href="./ngo-compliance.html">NGO Compliance</a> <a class="list-group-item list-group-item-action" href="./section8-company-compliance.html">Section 8 Compliance</a> <a class="list-group-item list-group-item-action" href="./csr-1-registration.html">CSR-1 Filing</a> <a class="list-group-item list-group-item-action" href="./section-80G-12A-registration.html">Sec. 80G & Sec. 12A</a> <a class="list-group-item list-group-item-action" href="./darphan-registration.html">Darpan Registration</a> <a class="list-group-item list-group-item-action" href="./fcra-registration.html">FCRA Registration</a>';
+            document.getElementById("othersListItems").innerHTML = othersLinks;
+        }
+
+        if (id === "fullyFledgeMoneyChangesLicence") {
+            const othersLinks = '<a class="list-group-item list-group-item-action" href="./ffmc.html"> Fully Fledge Money Changes Licence</a>';
+            document.getElementById("othersListItems").innerHTML = othersLinks;
+        }
+
+
+        if (id === "ca/Cs") {
+            const othersLinks = '<a class="list-group-item list-group-item-action" href="#">CA/CS</a> <a class="list-group-item list-group-item-action" href="./net-worth.html">Net Worth Certificate for VISA</a> <a class="list-group-item list-group-item-action" href="./property-valuation.html">Property Valuation Certificate</a> <a class="list-group-item list-group-item-action" href="./f&o-tax-audit.html">Future & Options (F&O) Tax Audit</a> <a class="list-group-item list-group-item-action" href="./cma.html">Project Report/(CMA) </a>';
+            document.getElementById("othersListItems").innerHTML = othersLinks;
+        }
+
+
+        if (id === "rera") {
+            const othersLinks = '<a class="list-group-item list-group-item-action" href="./rera.html">RERA</a>';
+            document.getElementById("othersListItems").innerHTML = othersLinks;
+        }
+
+    }
+
+    var menu = document.querySelector(".mega-menu-others");
+    menu.style.display === "static";
+    function displayMenuItemOthers(event) {
+        var menu = document.querySelector(".mega-menu-others");
+        menu.style.display === "static";
+    }
+    </script>
+
+    <script>
+    // const resourcesLinks = '<a class="list-group-item list-group-item-action" href="#">Taxation</a> <a class="list-group-item list-group-item-action" href="./ngo-registration.html">NGO</a> <a class="list-group-item list-group-item-action" href="./section-company-registration.html">Section 8 Company</a> <a class="list-group-item list-group-item-action" href="./trust-registration.html">Trust Registration</a> <a class="list-group-item list-group-item-action" href="./online-society.html">Society Registration</a>';
+    document.getElementById("resourcesListItems").innerHTML = resourcesLinks;
+    function getListItemsResources(event) {
+        const id = event.target.id;
+        if (id === "taxation") {
+            const resourcesLinks = '<a class="list-group-item list-group-item-action" href="#">Taxation</a> <a class="list-group-item list-group-item-action" href="./taxation.html">Taxation</a>';
+            document.getElementById("resourcesListItems").innerHTML = resourcesLinks;
+        }
+
+        if (id === "accounting") {
+            const resourcesLinks = '<a class="list-group-item list-group-item-action" href="#">Accounting</a> <a class="list-group-item list-group-item-action" href="./accounting.html">Accounting</a>';
+            document.getElementById("resourcesListItems").innerHTML = resourcesLinks;
+        }
+
+
+        if (id === "businessConsulting") {
+            const resourcesLinks = '<a class="list-group-item list-group-item-action" href="#">Business Consulting</a> <a class="list-group-item list-group-item-action" href="./consulting.html">Business Consulting</a>';
+            document.getElementById("resourcesListItems").innerHTML = resourcesLinks;
+        }
+
+    }
+
+    var menu = document.querySelector(".mega-menu-resources");
+    menu.style.display === "static";
+    function displayMenuItemResources(event) {
+        var menu = document.querySelector(".mega-menu-resources");
+        menu.style.display === "static";
+    }
+    </script>
+
+<script>
+    // const barsLinks = '<a class="list-group-item list-group-item-action" href="#">Taxation</a> <a class="list-group-item list-group-item-action" href="./ngo-registration.html">NGO</a> <a class="list-group-item list-group-item-action" href="./section-company-registration.html">Section 8 Company</a> <a class="list-group-item list-group-item-action" href="./trust-registration.html">Trust Registration</a> <a class="list-group-item list-group-item-action" href="./online-society.html">Society Registration</a>';
+    document.getElementById("barsListItems").innerHTML = barsLinks;
+    function getListItemsBars(event) {
+        const id = event.target.id;
+        if (id === "patnerWithUs") {
+            const barsLinks = '<a class="list-group-item list-group-item-action" href="#">Patner With Us</a> <a class="list-group-item list-group-item-action" href="./patnerwithus.html">Patner With Us</a>';
+            document.getElementById("barsListItems").innerHTML = barsLinks;
+        }
+
+        if (id === "talktoaExpert") {
+            const barsLinks = '<a class="list-group-item list-group-item-action" href="#">Talk to a Expert</a> <a class="list-group-item list-group-item-action" href="./talk.html">Talk to a Expert</a>';
+            document.getElementById("barsListItems").innerHTML = barsLinks;
+        }
+
+
+    }
+
+    var menu = document.querySelector(".mega-menu-bars");
+    menu.style.display === "static";
+    function displayMenuItemBars(event) {
+        var menu = document.querySelector(".mega-menu-bars");
+        menu.style.display === "static";
+    }
+    </script>
+
+
+
+</body>
+
+</html>
