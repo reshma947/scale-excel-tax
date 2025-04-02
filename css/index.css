@@ -65,7 +65,7 @@
 
 
 .bgimg{
-    background-image: url("./images/wave-1.jpeg");
+    background-image: url("./images/clear-image-banner.jpeg");
     height: 750px;
     width: 100%;
     /* background-color: #0E1422; */
@@ -73,6 +73,8 @@
     background-position: center center;
     background-repeat: no-repeat;   
 }
+
+
 .circle {
     height: 70px;
     width: 70px;
