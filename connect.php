@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "scale-excel-tax";
+$dbname = "scale-excel";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

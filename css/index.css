@@ -2,14 +2,14 @@
 
     color:#119083;  
 
+
 }
 
 .back-green{
-  background-color: #119083;
-    /* background-color:  #005753; */
+  background: linear-gradient(120deg, #015754, #4fbdb2, #4fbdb2);
+ 
     /* background-color:  #C1A43A; */
 
-    /* background-color: #8cbc43 !important; */
 }
 
 .magicpattern { 
@@ -20,8 +20,11 @@
     background-repeat: repeat;
     background-image: url("./images/magicpattern-polka-dot-pattern-1740047307402.png");
   }
-  
 
+  .box{
+    box-shadow: -7px 6px 7px -3px rgba(102,102,102,1);
+    /* box-shadow: -7px 6px 7px 1px rgba(94,92,94,1); */
+}
 /* .dropbtn {
     cursor: pointer;
 } 
@@ -65,7 +68,7 @@
 
 
 .bgimg{
-    background-image: url("./images/clear-image-banner.jpeg");
+    background-image: url("./images/main\ page.png");
     height: 750px;
     width: 100%;
     /* background-color: #0E1422; */
