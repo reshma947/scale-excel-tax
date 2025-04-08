@@ -2,13 +2,21 @@
 
     color:#119083;  
 
-
 }
 
 .back-green{
+
   background: linear-gradient(120deg, #015754, #4fbdb2, #4fbdb2);
- 
-    /* background-color:  #C1A43A; */
+  
+  /* background-color:  #C1A43A; */
+}
+
+.background-lightgreen{
+  background-color: rgb(92, 199, 188);
+
+}
+.rox{
+  border-radius: 40% 40% 0% 0%;
 }
 
 .box:hover{
@@ -16,6 +24,21 @@
   transition: .3s ease;
   transform: scale(1.1);
 }
+
+.box{
+  box-shadow: -7px 6px 7px -3px rgba(102,102,102,1);
+}
+
+.img-hover:hover{
+  transition: .1s ease;
+  transform: scale(1.2);
+}
+
+.img1-hover:hover{
+  transition: .2s ease;
+  transform: scale(0.8);
+}
+
 
 .magicpattern { 
     width: 100%;
@@ -26,10 +49,7 @@
     background-image: url("./images/magicpattern-polka-dot-pattern-1740047307402.png");
   }
 
-  .box{
-    box-shadow: -7px 6px 7px -3px rgba(102,102,102,1);
-    /* box-shadow: -7px 6px 7px 1px rgba(94,92,94,1); */
-}
+
 /* .dropbtn {
     cursor: pointer;
 } 

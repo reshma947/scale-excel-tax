@@ -2,8 +2,27 @@
   color: #119083;
 }
 
-.back-green {
-  background-color: #119083;
+.back-green{
+  
+  background: linear-gradient(120deg, #015754, #4fbdb2, #4fbdb2);
+  
+  /* background-color:  #C1A43A; */
+}
+
+.background-lightgreen{
+  background-color: rgb(92, 199, 188);
+
+}
+
+
+.box:hover{
+  background: linear-gradient(120deg, #4fbdb2, #4fbdb2,#015754,);
+  transition: .3s ease;
+  transform: scale(1.1);
+}
+
+.box{
+  box-shadow: -7px 6px 7px -3px rgba(102,102,102,1);
 }
 
 .nav-item {

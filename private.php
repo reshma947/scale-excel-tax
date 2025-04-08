@@ -430,7 +430,7 @@ include_once 'connect.php';
                         <input type="text" class="form-control" name="city" id="city" placeholder="City">
                       </div>
                 <div class="d-lg-flex justify-content-center mt-4 mb-3">
-                    <button type="submit" name="getStrted" class="px-5 py-2 text-white back-green border-0 rounded-3 fw-bold fs-6">Get Started</button>
+                    <button type="submit" name="getStrted" class="px-5 py-2 text-white back-green border-0 rounded-3 fw-bold fs-6 box">Get Started</button>
                 </div>
                   </form>
             </div>
@@ -503,7 +503,7 @@ include_once 'connect.php';
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button class="fs-6 px-5 py-3 back-green text-white border fw-bold mt-2 rounded-3">Get Started
+                    <button class="fs-6 px-5 py-3 back-green text-white border fw-bold mt-2 rounded-3 box">Get Started
                     </button>
                 </div>
                 <div class="px-1">
@@ -565,7 +565,7 @@ include_once 'connect.php';
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button class="fs-6 px-5 py-3 back-green text-white border fw-bold mt-2 rounded-3">Get Started
+                    <button class="fs-6 px-5 py-3 back-green text-white border fw-bold mt-2 rounded-3 box">Get Started
                     </button>
                 </div>
                 <div class="px-1">
@@ -636,7 +636,7 @@ include_once 'connect.php';
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button class="fs-6 px-5 py-3 back-green text-white border fw-bold mt-2 rounded-3">Get Started
+                    <button class="fs-6 px-5 py-3 back-green text-white border fw-bold mt-2 rounded-3 box">Get Started
                     </button>
                 </div>
                 <div class="px-1">
@@ -705,7 +705,7 @@ include_once 'connect.php';
                     <p class="fs-6"> Our experts can suggest alternative names if the preferred name is denied.</p>
                 </div>
                 <div>
-                    <button class="fs-6 px-5 py-3 back-green text-white border fw-bold mb-2 rounded-3">Talk to Incorporation Expert
+                    <button class="fs-6 px-5 py-3 back-green text-white border-0 fw-bold mb-2 rounded-3 box">Talk to Incorporation Expert
                     </button>
                 </div>
                 <p><b>Pricing:</b> Starting from ₹50,000, depending on business requirements. Includes first-year compliance, such as auditor appointment and annual filing.</p>           
@@ -761,17 +761,17 @@ include_once 'connect.php';
         <h2 class="fw-bold mb-4 mt-5">What Are the <span class="text-green">Key Features</span> and Benefits of a Private Limited Company?</h2>
         <p>A Private Limited Company provides an ideal business structure that combines legal protections, operational flexibility, and growth opportunities, making it a preferred choice for entrepreneurs and small to medium-sized businesses. Here are the 10 key features and 7 benefits of a Private Limited Company.</p>
         <div class="row row-cols-lg-4 justify-content-center mt-5">
-            <div class="bg-warning-subtle me-5 p-3">
+            <div class="background-lightgreen text-white rounded-3 box me-5 p-3">
                 <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40">
                 <h5 class="pt-2 pb-2 fw-bold">1. Limited Liability Protection</h5>
                 <p>Shareholders’ liability is limited to the unpaid amount of their shares. This safeguards personal assets from business liabilities.</p>
             </div>
-            <div class="bg-warning-subtle me-5 p-3">
+            <div class="background-lightgreen text-white rounded-3 box me-5 p-3">
                 <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40">
                 <h5 class="pt-2 pb-2 fw-bold">2. Separate Legal Entity</h5>
                 <p>Shareholders’ liability is limited to the unpaid amount of their shares. This safeguards personal assets from business liabilities.</p>
             </div>
-            <div class="bg-warning-subtle me-5 p-3">
+            <div class="background-lightgreen text-white rounded-3 box me-5 p-3">
                 <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40">
                 <h5 class="pt-2 pb-2 fw-bold">3.  Perpetual Succession</h5>
                 <p>Shareholders’ liability is limited to the unpaid amount of their shares. This safeguards personal assets from business liabilities.</p>
@@ -780,17 +780,17 @@ include_once 'connect.php';
         </div>
 
         <div class="row row-cols-lg-4 justify-content-center mt-5">
-            <div class="bg-warning-subtle me-5 p-3">
+            <div class="background-lightgreen text-white rounded-3 box me-5 p-3">
                 <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40">
                 <h5 class="pt-2 pb-2 fw-bold">1. Limited Liability Protection</h5>
                 <p>Shareholders’ liability is limited to the unpaid amount of their shares. This safeguards personal assets from business liabilities.</p>
             </div>
-            <div class="bg-warning-subtle me-5 p-3">
+            <div class="background-lightgreen text-white rounded-3 box me-5 p-3">
                 <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40">
                 <h5 class="pt-2 pb-2 fw-bold">2. Separate Legal Entity</h5>
                 <p>Shareholders’ liability is limited to the unpaid amount of their shares. This safeguards personal assets from business liabilities.</p>
             </div>
-            <div class="bg-warning-subtle me-5 p-3">
+            <div class="background-lightgreen text-white rounded-3 box me-5 p-3">
                 <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40">
                 <h5 class="pt-2 pb-2 fw-bold">3.  Perpetual Succession</h5>
                 <p>Shareholders’ liability is limited to the unpaid amount of their shares. This safeguards personal assets from business liabilities.</p>
