@@ -1,0 +1,51 @@
+.text-green {
+    color: #119083;
+  }
+  
+  .back-green{
+    
+    background: linear-gradient(120deg, #015754, #4fbdb2, #4fbdb2);
+    
+    /* background-color:  #C1A43A; */
+  }
+  .background-lightgreen{
+    background-color: rgb(92, 199, 188);
+  
+  }
+  .box:hover{
+    background: linear-gradient(120deg, #4fbdb2, #4fbdb2,#015754,);
+    transition: .3s ease;
+    transform: scale(1.1);
+  }
+  
+  .box{
+    box-shadow: -7px 6px 7px -3px rgba(102,102,102,1);
+  }
+  
+  
+  .nav-item {
+    padding: 0.5rem 0xp;
+  }
+  
+  /* .dropdown-hover:hover>.dropdown-menu {
+  display: inline-block;
+  } */
+  
+  .dropdown-hover>.dropdown-toggle:active {
+    /* Without this, clicking will make it sticky */
+    pointer-events: none;
+  }
+  
+  .hoverlinks a:hover {
+    color: #119083;
+  }
+  
+  .bgimg{
+      background-image: url("./images/wave\ design\ \(1\).png");
+      height: 750px;
+      width: 100%;
+      /* background-color: #0E1422; */
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;   
+  }

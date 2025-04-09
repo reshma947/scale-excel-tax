@@ -14,12 +14,12 @@
 
 }
 
-.card-hover:hover{
+/* .card-hover:hover{
   box-shadow: -7px 6px 7px -3px rgba(102,102,102,1);
-  /* transition: .3s ease; */
-  /* transform: scale(1.1); */
+  transition: .3s ease;
+ transform: scale(1.1);
   background-color: rgb(250, 234, 215);
-}
+} */
 
 /* .form{
   background-color: rgba(22,192,175,1);
