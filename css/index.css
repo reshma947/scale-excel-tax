@@ -15,9 +15,10 @@
   background-color: rgb(92, 199, 188);
 
 }
-/* .rox{
-  border-radius: 40% 40% 0% 0%;
-} */
+.half-circle{
+  border-radius: 175px 172px 10px 10px;
+  
+}
 
 .box:hover{
   background: linear-gradient(120deg, #4fbdb2, #4fbdb2,#015754,);

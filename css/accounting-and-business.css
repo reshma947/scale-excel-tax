@@ -8,7 +8,10 @@
     
     /* background-color:  #C1A43A; */
   }
+  .background-lightgreen{
+    background-color: rgb(92, 199, 188);
   
+  }
   .box:hover{
     background: linear-gradient(120deg, #4fbdb2, #4fbdb2,#015754,);
     transition: .3s ease;
