@@ -802,15 +802,20 @@ include_once 'connect.php';
     <div class="box15-footer back-green mt-5">
         <div class="container pt-5 pb-4">
             <div class="row row-cols-lg-3">
-                <div class="text-white ps-5 pe-5">
+            <div class="text-white ps-5 pe-5">
                     <h3>CORPORATE AND LEGAL SOLUTIONS</h3>
                     <div class="line"></div>
                     <p class="pt-4">Goods and Service Taxes</p>
                     <p>Company Registration</p>
                     <p>Non-governmental organization (NGO)</p>
                     <p>Intellectual Property (IP)</p>
+                    <h4 class="">Address</h4>
 
-                    <h4 class="pt-3 pb-2">Follow Us</h4>
+                    <div class="pb-3">
+                        1st Floor, Emperor Enclave, 8-2-695/E/10, Road No. 12, Banjara Hills, Hyderabad, Telangana
+                        500034
+                    </div>
+                    <h4 class="">Follow Us</h4>
                     <div>
                         <i class="fa-brands fa-linkedin-in"></i>
                         <i class="fa-brands fa-twitter ps-3"></i>
