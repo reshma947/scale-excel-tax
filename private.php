@@ -409,7 +409,7 @@ include_once 'connect.php';
                 </div>
             </div>
 
-            <div class="col-lg-4 ms-5 shadow-lg rounded-2 position-relative bg-warning-subtle">
+            <div class="col-lg-4 ms-5 shadow-lg rounded-2 position-relative bg-body-tertiary box">
                 <div class="position-absolute top-0 start-0 translate-start">
                     <img src="./css/images/img.png" height="45" width="200">
                 </div>
@@ -762,38 +762,43 @@ include_once 'connect.php';
         <p>A Private Limited Company provides an ideal business structure that combines legal protections, operational flexibility, and growth opportunities, making it a preferred choice for entrepreneurs and small to medium-sized businesses. Here are the 10 key features and 7 benefits of a Private Limited Company.</p>
         <div class="row row-cols-lg-4 justify-content-center mt-5">
             <div class="background-lightgreen text-white rounded-3 box me-5 p-3">
-                <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40">
+            <i class="fa-solid fa-share-from-square fs-1"></i>
+                <!-- <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40"> -->
                 <h5 class="pt-2 pb-2 fw-bold">1. Limited Liability Protection</h5>
                 <p>Shareholders’ liability is limited to the unpaid amount of their shares. This safeguards personal assets from business liabilities.</p>
             </div>
             <div class="background-lightgreen text-white rounded-3 box me-5 p-3">
-                <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40">
+            <i class="fa-solid fa-gavel fs-1"></i>
+                <!-- <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40"> -->
                 <h5 class="pt-2 pb-2 fw-bold">2. Separate Legal Entity</h5>
-                <p>Shareholders’ liability is limited to the unpaid amount of their shares. This safeguards personal assets from business liabilities.</p>
+                <p>The company is treated as an independent entity, allowing it to own property, sue, and be sued in its own name.</p>
             </div>
             <div class="background-lightgreen text-white rounded-3 box me-5 p-3">
-                <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40">
+            <i class="fa-solid fa-building fs-1"></i>
+                <!-- <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40"> -->
                 <h5 class="pt-2 pb-2 fw-bold">3.  Perpetual Succession</h5>
-                <p>Shareholders’ liability is limited to the unpaid amount of their shares. This safeguards personal assets from business liabilities.</p>
+                <p>The company continues to exist irrespective of changes in ownership or member status, ensuring continuity in business operations.</p>
             </div>
 
         </div>
 
         <div class="row row-cols-lg-4 justify-content-center mt-5">
             <div class="background-lightgreen text-white rounded-3 box me-5 p-3">
-                <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40">
-                <h5 class="pt-2 pb-2 fw-bold">1. Limited Liability Protection</h5>
-                <p>Shareholders’ liability is limited to the unpaid amount of their shares. This safeguards personal assets from business liabilities.</p>
+            <i class="fa-solid fa-users fs-1"></i>
+                <!-- <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40"> -->
+                <h5 class="pt-2 pb-2 fw-bold">4. Membership Flexibility</h5>
+                <p>Requires at least 2 members and allows up to 200 members, making it suitable for small and medium-sized enterprises (SMEs).</p>
+            </div>
+            <div class="background-lightgreen text-white rounded-3 box me-5 p-3">
+            <i class="fa-solid fa-share fs-1"></i>
+                <!-- <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40"> -->
+                <h5 class="pt-2 pb-2 fw-bold">5. Restrictions on Share Transfers</h5>
+                <p>Shares can only be transferred within the group, ensuring control over ownership and decision-making.</p>
             </div>
             <div class="background-lightgreen text-white rounded-3 box me-5 p-3">
                 <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40">
-                <h5 class="pt-2 pb-2 fw-bold">2. Separate Legal Entity</h5>
-                <p>Shareholders’ liability is limited to the unpaid amount of their shares. This safeguards personal assets from business liabilities.</p>
-            </div>
-            <div class="background-lightgreen text-white rounded-3 box me-5 p-3">
-                <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40">
-                <h5 class="pt-2 pb-2 fw-bold">3.  Perpetual Succession</h5>
-                <p>Shareholders’ liability is limited to the unpaid amount of their shares. This safeguards personal assets from business liabilities.</p>
+                <h5 class="pt-2 pb-2 fw-bold">6. No Minimum Paid-Up Capital</h5>
+                <p>Entrepreneurs can register a private limited company in India without any mandatory requirement for minimum capital investment.</p>
             </div>
 
         </div>
