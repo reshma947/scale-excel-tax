@@ -411,7 +411,7 @@ include_once 'connect.php';
 
             <div class="col-lg-4 ms-5 shadow-lg rounded-2 position-relative bg-body-tertiary box">
                 <div class="position-absolute top-0 start-0 translate-start">
-                    <img src="./css/images/img.png" height="45" width="200">
+                    <img src="./css/images/form graphic.png" height="45" width="200">
                 </div>
                 <form method="post">
                 <h4 class="text-center mt-5 pt-2 pb-2">Register Your Company Today</h4>
@@ -753,7 +753,7 @@ include_once 'connect.php';
             </div>
         </div>
 
-        <div class="border p-3 rounded-3 bg-warning-subtle">
+        <div class="border-0 p-3 rounded-3 back-green text-white box">
             <h2 class="fw-bold mb-3">Companies Act, 2013</h2>
             <p>The Companies Act 2013 (No. 18 of 2013) is the primary source of Indian company law. It received presidential assent on 29 August 2013 and largely replaced the Companies Act 1956. The Act was implemented in stages. Section 1 came into force on 30 August 2013. 98 sections became effective on 12 September 2013 with some changes. Another 183 sections were enforced from 1 April 2014.</p>
         </div>
