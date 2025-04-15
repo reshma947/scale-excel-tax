@@ -796,7 +796,8 @@ include_once 'connect.php';
                 <p>Shares can only be transferred within the group, ensuring control over ownership and decision-making.</p>
             </div>
             <div class="background-lightgreen text-white rounded-3 box me-5 p-3">
-                <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40">
+            <i class="fa-solid fa-file fs-1"></i>
+                <!-- <img src="https://assets.vakilsearch.com/incorporation-outline.svg" height="40" width="40"> -->
                 <h5 class="pt-2 pb-2 fw-bold">6. No Minimum Paid-Up Capital</h5>
                 <p>Entrepreneurs can register a private limited company in India without any mandatory requirement for minimum capital investment.</p>
             </div>
