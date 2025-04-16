@@ -108,7 +108,7 @@ video {
 }
 
 .bg-overlay {
-  background-color: rgba(250, 250, 250, 0.85); 
+  background-color: rgba(250, 250, 250, 0.85);
   /* Optional: white semi-transparent overlay */
   min-height: 80vh;
 }

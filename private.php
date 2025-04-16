@@ -440,15 +440,9 @@ include_once 'connect.php';
 
 
 
-
-
-
-
     <?php
     if(isset($_POST['getStrted']))
     {
-
-
 
         $email = $_POST['email'];
         $mobile = $_POST['mobile'];
